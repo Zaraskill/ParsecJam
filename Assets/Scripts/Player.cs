@@ -1,6 +1,7 @@
 ﻿using Rewired;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -13,6 +14,12 @@ public class Player : MonoBehaviour
     Vector2 movement;
 
     private Rewired.Player mainPlayer;
+
+    public float maxTimeHold;
+    private float timeAtStartHold = 0;
+
+    public float maxTimesToMash;
+    private float startMash = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +48,52 @@ public class Player : MonoBehaviour
             {
                 // Lancement mission
                 Debug.Log("Coucou");
+
+                //Hold Button
+                if(collision.GetComponent<InteractableObjects>().id == 1)
+                {
+                    //DisplayUI
+                    if (mainPlayer.GetButton("Submit"))
+                    {
+                        timeAtStartHold += Time.deltaTime;
+                        if(timeAtStartHold >= maxTimeHold)
+                        {
+                            //Completed
+                        }
+                    }
+                    else if (mainPlayer.GetButtonUp("Submit"))
+                    {
+                        timeAtStartHold = 0;
+                    }
+                }
+
+                //Mash Button
+                if(collision.GetComponent<InteractableObjects>().id == 2)
+                {
+                    //DisplayUI
+                    if (mainPlayer.GetButtonDown("Submit"))
+                    {
+                        startMash++;
+                        if(startMash >= maxTimesToMash)
+                        {
+                            //Completed
+                        }
+                    }
+                    else if (startMash > 0)
+                    {
+                        startMash -= Time.deltaTime;
+                    }
+                    else if (startMash <= 0)
+                    {
+                        startMash = 0;
+                    }
+                }
+
+                //Input Suite
+                if(collision.GetComponent<InteractableObjects>().id == 3)
+                {
+
+                }
             }
         }
     }
