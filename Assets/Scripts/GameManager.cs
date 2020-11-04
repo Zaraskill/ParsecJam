@@ -8,23 +8,25 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    private GAME_STATE stateGame = GAME_STATE.dayTime;
+    public GAME_STATE stateGame = GAME_STATE.dayTime;
 
-    private int numberDays;
-    private int day = 0;
+    public int numberDays;
+    public int day = 0;
     private List<int> playersBoss;
     private int[] playersScoreFinal;
-    private int[] playersScore;
+    public int[] playersScore;
     private Player[] listPlayers;
-    private int boss;
+    public int boss;
 
     public float timeDay = 120f;
     public float timeVote = 120f;
+    public float timerSpawnMissions = 15f;
     public int numberMissionsByDay = 10;
 
-    private float timeDayLeft;
-    private float timeVoteLeft;
-    private int numberMissionsDone = 0;
+    public float timeDayLeft;
+    public float timeVoteLeft;
+    public float timerSpawnMissionsLeft;
+    public int numberMissionsDone = 0;
 
     private void Awake()
     {
@@ -47,12 +49,12 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        numberMissionsDone = numberMissionsByDay;
+        timerSpawnMissionsLeft = timerSpawnMissions;
         timeDayLeft = timeDay;
         timeVoteLeft = timeVote;
 
         int random = Random.Range(0, numberDays);
-        //Code player dire qu'il est boss
+        listPlayers[random].isBoss = true;
         playersBoss.Add(random);
         boss = random;
     }
@@ -63,6 +65,13 @@ public class GameManager : MonoBehaviour
         switch (stateGame)
         {
             case GAME_STATE.dayTime:
+                timerSpawnMissionsLeft -= Time.deltaTime;
+                if(timerSpawnMissionsLeft <= 0)
+                {
+                    SpawnMission();
+                    timerSpawnMissionsLeft = timerSpawnMissions;
+                }
+
                 timeDayLeft -= Time.deltaTime;
                 if (timeDayLeft <= 0)
                 {
@@ -92,32 +101,42 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void MissionDone(bool isSuccess)
+    public void MissionDone(bool isSuccess, bool isBoss, int idPlayer)
     {
         if (isSuccess)
         {
-            ////missions + 1 
-            //if(numberMissionsDone == numberMissionsByDay)
-            //{
-            //    //fin jour
-            //}
+            Debug.Log("Oh hé hein bon");
+            numberMissionsDone++;
+            if (isBoss)
+            {
+                playersScore[idPlayer]++;
+            }
+            else
+            {
+                playersScore[idPlayer] += 2;
+            }
+            if (numberMissionsDone == numberMissionsByDay)
+            {
+                SwitchStateGame(GAME_STATE.votingTime);
+            }
         }
     }
 
     private void SwitchStateGame(GAME_STATE newState)
     {
-        switch (stateGame)
+        switch (newState)
         {
             case GAME_STATE.dayTime:
-                timeDayLeft = Time.deltaTime;
+                timeDayLeft = timeDay;                
                 int random;
                 do
                 {
                     random = Random.Range(0, numberDays);
                 } while (playersBoss.Contains(random));
-                //Code player dire qu'il est boss
+                listPlayers[random].isBoss = true;
                 playersBoss.Add(random);
                 boss = random;
+                stateGame = newState;
                 break;
             case GAME_STATE.votingTime:
                 int score = 0;
@@ -126,13 +145,20 @@ public class GameManager : MonoBehaviour
                     score += value;
                 }
                 playersScoreFinal[boss] = score;
-
-                timeVoteLeft = Time.deltaTime;
+                listPlayers[boss].isBoss = false;
+                timeVoteLeft = timeVote;
                 // Affichage UI résultats
+                stateGame = newState;
                 break;
             case GAME_STATE.results:
+                stateGame = newState;
                 break;
         }
+    }
+
+    private void SpawnMission()
+    {
+
     }
 }
 

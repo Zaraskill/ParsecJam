@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField] private int idPlayer;
+
     [Header("Movement")]
     public float moveSpeed = 5f;
 
@@ -16,23 +18,36 @@ public class Player : MonoBehaviour
     private Rewired.Player mainPlayer;
 
     public float maxTimeHold;
-    private float timeAtStartHold = 0;
+    public float timeAtStartHold = 0;
 
     public float maxTimesToMash;
-    private float startMash = 0;
+    public float startMash = 0;
+
+    public bool isBoss;
+    private bool canDoMission;
+    private bool hasStartMission;
+    private bool canMove = true;
+    private InteractableObjects mission;
 
     // Start is called before the first frame update
     void Start()
     {
-        mainPlayer = ReInput.players.GetPlayer("Player0");
+        mainPlayer = ReInput.players.GetPlayer(idPlayer);
         _rigidbody = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        movement.x = mainPlayer.GetAxis("HorizontalMove");
-        movement.y = mainPlayer.GetAxis("VerticalMove");
+        if (canDoMission)
+        {
+            CheckMission();
+        }
+        if (canMove)
+        {
+            movement.x = mainPlayer.GetAxis("HorizontalMove");
+            movement.y = mainPlayer.GetAxis("VerticalMove");
+        }        
     }
 
     private void FixedUpdate()
@@ -40,61 +55,92 @@ public class Player : MonoBehaviour
         _rigidbody.MovePosition(_rigidbody.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void CheckMission()
+    {
+        if (!hasStartMission)
+        {
+            if (mainPlayer.GetButtonDown("Submit"))
+            {
+                Debug.Log("Coucou");                
+                hasStartMission = true;
+                canMove = false;
+            }
+        }
+        else
+        {
+            //Hold Button
+            if (mission.id == 1)
+            {
+                //DisplayUI
+                if (mainPlayer.GetButton("Submit"))
+                {
+                    timeAtStartHold += Time.deltaTime;
+                    if (timeAtStartHold >= maxTimeHold)
+                    {
+                        hasStartMission = false;
+                        canDoMission = false;
+                        timeAtStartHold = 0;
+                        canMove = true;
+                        GameManager.instance.MissionDone(true, isBoss, idPlayer);
+                        //Completed
+                    }
+                }
+                else if (mainPlayer.GetButtonUp("Submit"))
+                {
+                    timeAtStartHold = 0;
+                }
+            }
+
+            //Mash Button
+            if (mission.id == 2)
+            {
+                //DisplayUI
+                if (mainPlayer.GetButtonDown("Submit"))
+                {
+                    startMash++;
+                    if (startMash >= maxTimesToMash)
+                    {
+                        hasStartMission = false;
+                        canDoMission = false;
+                        startMash = 0;
+                        canMove = true;
+                        GameManager.instance.MissionDone(true, isBoss, idPlayer);
+                        //Completed
+                    }
+                }
+                else if (startMash > 0)
+                {
+                    startMash -= Time.deltaTime;
+                }
+                else if (startMash <= 0)
+                {
+                    startMash = 0;
+                }
+            }
+
+            //Input Suite
+            if (mission.id == 3)
+            {
+
+            }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Interactable"))
         {
-            if(mainPlayer.GetButtonDown("Submit"))
-            {
-                // Lancement mission
-                Debug.Log("Coucou");
+            canDoMission = true;
+            mission = collision.GetComponent<InteractableObjects>();
+        }
+    }
 
-                //Hold Button
-                if(collision.GetComponent<InteractableObjects>().id == 1)
-                {
-                    //DisplayUI
-                    if (mainPlayer.GetButton("Submit"))
-                    {
-                        timeAtStartHold += Time.deltaTime;
-                        if(timeAtStartHold >= maxTimeHold)
-                        {
-                            //Completed
-                        }
-                    }
-                    else if (mainPlayer.GetButtonUp("Submit"))
-                    {
-                        timeAtStartHold = 0;
-                    }
-                }
-
-                //Mash Button
-                if(collision.GetComponent<InteractableObjects>().id == 2)
-                {
-                    //DisplayUI
-                    if (mainPlayer.GetButtonDown("Submit"))
-                    {
-                        startMash++;
-                        if(startMash >= maxTimesToMash)
-                        {
-                            //Completed
-                        }
-                    }
-                    else if (startMash > 0)
-                    {
-                        startMash -= Time.deltaTime;
-                    }
-                    else if (startMash <= 0)
-                    {
-                        startMash = 0;
-                    }
-                }
-
-                //Input Suite
-                if(collision.GetComponent<InteractableObjects>().id == 3)
-                {
-
-                }
-            }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Interactable"))
+        {
+            canDoMission = false;
+            mission = null;
         }
     }
 }
