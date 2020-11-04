@@ -1,0 +1,415 @@
+fileFormatVersion: 2
+guid: c9c58ff43e954d048a0a039154509182
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: Head_Sloth
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 319
+      height: 314
+    spriteID: 4a84de1ecbcbd3a4694a0b4898d6f19e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: -555}
+  - name: ShoulderR_Sloth
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 225
+      y: 790
+      width: 63
+      height: 167
+    spriteID: f5992d7de896e754cbb601abc643193f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -9, y: 337}
+  - name: AvArmR_Sloth
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 296
+      y: 790
+      width: 57
+      height: 177
+    spriteID: 053952fb31252c449a1c909c482efc89
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 56, y: 492}
+  - name: Chest_Sloth
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 326
+      width: 213
+      height: 287
+    spriteID: b6ed14d07e2edf44198807c41b3be2fe
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -81, y: -23}
+  - name: LegR_Sloth
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 225
+      y: 326
+      width: 128
+      height: 224
+    spriteID: c8cc9feaa9684224abc2abb055415620
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 74, y: 140}
+  - name: FeetR_Sloth
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 331
+      y: 4
+      width: 145
+      height: 227
+    spriteID: 98855fac9c8b6144ca22623d02447255
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 201, y: 4}
+  - name: LegL_Sloth
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 225
+      y: 558
+      width: 128
+      height: 224
+    spriteID: 99d7ad4c46c304947b928617844aad25
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 104, y: 350}
+  - name: FeetL_Sloth
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 621
+      width: 145
+      height: 227
+    spriteID: 25ee90a8339feaf428e05f834e98141d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -96, y: 599}
+  - name: ShoulderL_Sloth
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 361
+      y: 326
+      width: 62
+      height: 167
+    spriteID: 1ebb53769f4e51f479b52abbb0110a3d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 259, y: -147}
+  - name: AvArmL_Sloth
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 157
+      y: 621
+      width: 57
+      height: 177
+    spriteID: e21edca2c3f018e40965d46866b7d539
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 50, y: 303}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 512
+  importedTextureHeight: 1024
+  documentSize: {x: 319, y: 873}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 512
+  textureActualHeight: 1024
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Sloth
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 
+    layerID: 13
+    mosaicPosition: {x: 0, y: 0}
+  - name: Head_Sloth
+    spriteName: Head_Sloth
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 4a84de1ecbcbd3a4694a0b4898d6f19e
+    layerID: 12
+    mosaicPosition: {x: 4, y: 4}
+  - name: ShoulderR_Sloth
+    spriteName: ShoulderR_Sloth
+    isGroup: 0
+    parentIndex: 0
+    spriteID: f5992d7de896e754cbb601abc643193f
+    layerID: 11
+    mosaicPosition: {x: 225, y: 790}
+  - name: AvArmR_Sloth
+    spriteName: AvArmR_Sloth
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 053952fb31252c449a1c909c482efc89
+    layerID: 10
+    mosaicPosition: {x: 296, y: 790}
+  - name: Chest_Sloth
+    spriteName: Chest_Sloth
+    isGroup: 0
+    parentIndex: 0
+    spriteID: b6ed14d07e2edf44198807c41b3be2fe
+    layerID: 9
+    mosaicPosition: {x: 4, y: 326}
+  - name: LegR_Sloth
+    spriteName: LegR_Sloth
+    isGroup: 0
+    parentIndex: 0
+    spriteID: c8cc9feaa9684224abc2abb055415620
+    layerID: 8
+    mosaicPosition: {x: 225, y: 326}
+  - name: FeetR_Sloth
+    spriteName: FeetR_Sloth
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 98855fac9c8b6144ca22623d02447255
+    layerID: 7
+    mosaicPosition: {x: 331, y: 4}
+  - name: LegL_Sloth
+    spriteName: LegL_Sloth
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 99d7ad4c46c304947b928617844aad25
+    layerID: 6
+    mosaicPosition: {x: 225, y: 558}
+  - name: FeetL_Sloth
+    spriteName: FeetL_Sloth
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 25ee90a8339feaf428e05f834e98141d
+    layerID: 5
+    mosaicPosition: {x: 4, y: 621}
+  - name: ShoulderL_Sloth
+    spriteName: ShoulderL_Sloth
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 1ebb53769f4e51f479b52abbb0110a3d
+    layerID: 4
+    mosaicPosition: {x: 361, y: 326}
+  - name: AvArmL_Sloth
+    spriteName: AvArmL_Sloth
+    isGroup: 0
+    parentIndex: 0
+    spriteID: e21edca2c3f018e40965d46866b7d539
+    layerID: 3
+    mosaicPosition: {x: 157, y: 621}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 0
+  textureAssetName: Sloth Texture
+  prefabAssetName: Sloth Prefab
+  spriteLibAssetName: Sloth Sprite Lib
+  secondarySpriteTextures: []

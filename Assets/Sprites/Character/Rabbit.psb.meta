@@ -1,0 +1,415 @@
+fileFormatVersion: 2
+guid: 35ac985a822cbaa4ea2b1d22bfeb3617
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: Head_Rabbit
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 328
+      height: 452
+    spriteID: 8a3f99e7afc96a547942fdad07a1e23b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: -557}
+  - name: ShoulderR_Rabbit
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 340
+      y: 239
+      width: 63
+      height: 167
+    spriteID: 15d030355484a4444bb8768cfbd547f1
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 127, y: -214}
+  - name: AvArmR_Rabbit
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 140
+      y: 759
+      width: 57
+      height: 177
+    spriteID: 78b334b5c24ab9948a53491a5df3f862
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -79, y: 461}
+  - name: Chest_Rabbit
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 464
+      width: 213
+      height: 287
+    spriteID: f2768bdba5274ba478300c90a92f9547
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -60, y: 115}
+  - name: LegR_Rabbit
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 378
+      y: 464
+      width: 128
+      height: 224
+    spriteID: dc1b6aaec91eeda4daa0f3a03bca355a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 248, y: 278}
+  - name: FeetR_Rabbit
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 225
+      y: 464
+      width: 145
+      height: 227
+    spriteID: cca1c7a1f154946458186314bc6c623f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 116, y: 464}
+  - name: LegL_Rabbit
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 759
+      width: 128
+      height: 224
+    spriteID: ae5387d69dbbad34cb626e8b2a9cb9c7
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -96, y: 551}
+  - name: FeetL_Rabbit
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 340
+      y: 4
+      width: 145
+      height: 227
+    spriteID: b30754e61ddc5ca439e1c6b0a2d522fa
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 261, y: -18}
+  - name: ShoulderL_Rabbit
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 411
+      y: 239
+      width: 63
+      height: 167
+    spriteID: 906e6ac998b99624bb0d9f2c3e5e9082
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 331, y: -234}
+  - name: AvArmL_Rabbit
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 205
+      y: 759
+      width: 57
+      height: 177
+    spriteID: 323743245eb847a44803b458eef8d0ba
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 119, y: 441}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 512
+  importedTextureHeight: 1024
+  documentSize: {x: 328, y: 1013}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 512
+  textureActualHeight: 1024
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Rabbit
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 
+    layerID: 13
+    mosaicPosition: {x: 0, y: 0}
+  - name: Head_Rabbit
+    spriteName: Head_Rabbit
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 8a3f99e7afc96a547942fdad07a1e23b
+    layerID: 12
+    mosaicPosition: {x: 4, y: 4}
+  - name: ShoulderR_Rabbit
+    spriteName: ShoulderR_Rabbit
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 15d030355484a4444bb8768cfbd547f1
+    layerID: 11
+    mosaicPosition: {x: 340, y: 239}
+  - name: AvArmR_Rabbit
+    spriteName: AvArmR_Rabbit
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 78b334b5c24ab9948a53491a5df3f862
+    layerID: 10
+    mosaicPosition: {x: 140, y: 759}
+  - name: Chest_Rabbit
+    spriteName: Chest_Rabbit
+    isGroup: 0
+    parentIndex: 0
+    spriteID: f2768bdba5274ba478300c90a92f9547
+    layerID: 9
+    mosaicPosition: {x: 4, y: 464}
+  - name: LegR_Rabbit
+    spriteName: LegR_Rabbit
+    isGroup: 0
+    parentIndex: 0
+    spriteID: dc1b6aaec91eeda4daa0f3a03bca355a
+    layerID: 8
+    mosaicPosition: {x: 378, y: 464}
+  - name: FeetR_Rabbit
+    spriteName: FeetR_Rabbit
+    isGroup: 0
+    parentIndex: 0
+    spriteID: cca1c7a1f154946458186314bc6c623f
+    layerID: 7
+    mosaicPosition: {x: 225, y: 464}
+  - name: LegL_Rabbit
+    spriteName: LegL_Rabbit
+    isGroup: 0
+    parentIndex: 0
+    spriteID: ae5387d69dbbad34cb626e8b2a9cb9c7
+    layerID: 6
+    mosaicPosition: {x: 4, y: 759}
+  - name: FeetL_Rabbit
+    spriteName: FeetL_Rabbit
+    isGroup: 0
+    parentIndex: 0
+    spriteID: b30754e61ddc5ca439e1c6b0a2d522fa
+    layerID: 5
+    mosaicPosition: {x: 340, y: 4}
+  - name: ShoulderL_Rabbit
+    spriteName: ShoulderL_Rabbit
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 906e6ac998b99624bb0d9f2c3e5e9082
+    layerID: 4
+    mosaicPosition: {x: 411, y: 239}
+  - name: AvArmL_Rabbit
+    spriteName: AvArmL_Rabbit
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 323743245eb847a44803b458eef8d0ba
+    layerID: 3
+    mosaicPosition: {x: 205, y: 759}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 0
+  textureAssetName: Rabbit Texture
+  prefabAssetName: Rabbit Prefab
+  spriteLibAssetName: Rabbit Sprite Lib
+  secondarySpriteTextures: []

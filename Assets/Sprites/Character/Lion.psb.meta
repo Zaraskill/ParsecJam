@@ -1,0 +1,444 @@
+fileFormatVersion: 2
+guid: b3de6616a7c440949bcba91e2cc66fb2
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: Head_Lion
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 360
+      height: 472
+    spriteID: 1a09e7c713d35794f9f6faf3de56211a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: -464}
+  - name: ShoulderR_Lion
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 372
+      y: 236
+      width: 63
+      height: 167
+    spriteID: 84cfe4d7b3aa0084bbbd864e7156c77c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 178, y: -217}
+  - name: AvArmR_Lion
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 372
+      y: 586
+      width: 57
+      height: 177
+    spriteID: 293b0e6545570694f94260c8e7d718e9
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 172, y: 288}
+  - name: Chest_Lion
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 484
+      width: 213
+      height: 287
+    spriteID: 360ee727894a33447ad4e1711103a1e2
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -41, y: 135}
+  - name: LegR_Lion
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 225
+      y: 484
+      width: 128
+      height: 224
+    spriteID: 0ab6da2fe6998e040a8db124c5471c45
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 114, y: 298}
+  - name: FeetR_Lion
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 779
+      width: 145
+      height: 227
+    spriteID: ef4659ef222d6664886a80a3b5297b7d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -86, y: 779}
+  - name: LegL_Lion
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 372
+      y: 4
+      width: 128
+      height: 224
+    spriteID: 9289dd74267de3f4bb9217c66c8e2eeb
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 291, y: -204}
+  - name: FeetL_Lion
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 157
+      y: 779
+      width: 145
+      height: 227
+    spriteID: 0cb021ce47fd1634cab3f564901feb27
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 97, y: 757}
+  - name: ShoulderL_Lion
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 372
+      y: 411
+      width: 63
+      height: 167
+    spriteID: dfbf140c32e41c7458f0effa3c4a133e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 311, y: -62}
+  - name: AvArmL_Lion
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 372
+      y: 771
+      width: 57
+      height: 177
+    spriteID: bbdb94a3d6836c9478f4f0d4ca7e8ad2
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 305, y: 453}
+  - name: Tail_Lion
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 508
+      y: 4
+      width: 315
+      height: 61
+    spriteID: a3cef3ac619e6b3489edf828103d029e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 355, y: -295}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 1024
+  importedTextureHeight: 1024
+  documentSize: {x: 468, y: 940}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 1024
+  textureActualHeight: 1024
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Lion
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 
+    layerID: 14
+    mosaicPosition: {x: 0, y: 0}
+  - name: Head_Lion
+    spriteName: Head_Lion
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 1a09e7c713d35794f9f6faf3de56211a
+    layerID: 13
+    mosaicPosition: {x: 4, y: 4}
+  - name: ShoulderR_Lion
+    spriteName: ShoulderR_Lion
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 84cfe4d7b3aa0084bbbd864e7156c77c
+    layerID: 12
+    mosaicPosition: {x: 372, y: 236}
+  - name: AvArmR_Lion
+    spriteName: AvArmR_Lion
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 293b0e6545570694f94260c8e7d718e9
+    layerID: 11
+    mosaicPosition: {x: 372, y: 586}
+  - name: Chest_Lion
+    spriteName: Chest_Lion
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 360ee727894a33447ad4e1711103a1e2
+    layerID: 10
+    mosaicPosition: {x: 4, y: 484}
+  - name: LegR_Lion
+    spriteName: LegR_Lion
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 0ab6da2fe6998e040a8db124c5471c45
+    layerID: 9
+    mosaicPosition: {x: 225, y: 484}
+  - name: FeetR_Lion
+    spriteName: FeetR_Lion
+    isGroup: 0
+    parentIndex: 0
+    spriteID: ef4659ef222d6664886a80a3b5297b7d
+    layerID: 8
+    mosaicPosition: {x: 4, y: 779}
+  - name: LegL_Lion
+    spriteName: LegL_Lion
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 9289dd74267de3f4bb9217c66c8e2eeb
+    layerID: 7
+    mosaicPosition: {x: 372, y: 4}
+  - name: FeetL_Lion
+    spriteName: FeetL_Lion
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 0cb021ce47fd1634cab3f564901feb27
+    layerID: 6
+    mosaicPosition: {x: 157, y: 779}
+  - name: ShoulderL_Lion
+    spriteName: ShoulderL_Lion
+    isGroup: 0
+    parentIndex: 0
+    spriteID: dfbf140c32e41c7458f0effa3c4a133e
+    layerID: 5
+    mosaicPosition: {x: 372, y: 411}
+  - name: AvArmL_Lion
+    spriteName: AvArmL_Lion
+    isGroup: 0
+    parentIndex: 0
+    spriteID: bbdb94a3d6836c9478f4f0d4ca7e8ad2
+    layerID: 4
+    mosaicPosition: {x: 372, y: 771}
+  - name: Tail_Lion
+    spriteName: Tail_Lion
+    isGroup: 0
+    parentIndex: 0
+    spriteID: a3cef3ac619e6b3489edf828103d029e
+    layerID: 3
+    mosaicPosition: {x: 508, y: 4}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 0
+  textureAssetName: Lion Texture
+  prefabAssetName: Lion Prefab
+  spriteLibAssetName: Lion Sprite Lib
+  secondarySpriteTextures: []

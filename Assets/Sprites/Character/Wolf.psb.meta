@@ -1,0 +1,444 @@
+fileFormatVersion: 2
+guid: 429ed277c4cad0a4da63a10fa8b5992a
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: Head_Wolf
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 306
+      height: 430
+    spriteID: fa13031f3a8b5f1448b648d920b4e818
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: -509}
+  - name: ShoulderR_Wolf
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 225
+      y: 837
+      width: 63
+      height: 167
+    spriteID: 29c670896e010c847890bd7f0a479c04
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 12, y: 384}
+  - name: AvArmR_Wolf
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 296
+      y: 837
+      width: 57
+      height: 177
+    spriteID: dc68cc93398fff04395ebe0de5dde29f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 77, y: 539}
+  - name: Chest_Wolf
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 442
+      width: 213
+      height: 287
+    spriteID: a8050100b081dd346909b2e8a2cec166
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -60, y: 93}
+  - name: LegR_Wolf
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 225
+      y: 605
+      width: 128
+      height: 224
+    spriteID: 545107078652b5a4fa3b6ee2551004dc
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 95, y: 419}
+  - name: FeetR_Wolf
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 737
+      width: 145
+      height: 227
+    spriteID: 51e9f1eaec8b72249abd6b7ad4f6b03b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -105, y: 737}
+  - name: LegL_Wolf
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 361
+      y: 605
+      width: 128
+      height: 224
+    spriteID: 0a250ce143ed59e40bdfa31c381738ee
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 261, y: 397}
+  - name: FeetL_Wolf
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 318
+      y: 4
+      width: 145
+      height: 227
+    spriteID: 7aeafab0773ff7f40bcc70fd7047e0ac
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 239, y: -18}
+  - name: ShoulderL_Wolf
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 361
+      y: 837
+      width: 63
+      height: 167
+    spriteID: b6390de18881e4348bd116a4ed8041cd
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 281, y: 364}
+  - name: AvArmL_Wolf
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 432
+      y: 837
+      width: 57
+      height: 177
+    spriteID: 61258f239b7491c42a2298ed515c02ca
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 346, y: 519}
+  - name: Tail_Wolf
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 225
+      y: 442
+      width: 229
+      height: 155
+    spriteID: 249d2460e315bce4984f6fad091e4dc5
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 31, y: 168}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 512
+  importedTextureHeight: 1024
+  documentSize: {x: 423, y: 943}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 512
+  textureActualHeight: 1024
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Wolf
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 
+    layerID: 14
+    mosaicPosition: {x: 0, y: 0}
+  - name: Head_Wolf
+    spriteName: Head_Wolf
+    isGroup: 0
+    parentIndex: 0
+    spriteID: fa13031f3a8b5f1448b648d920b4e818
+    layerID: 13
+    mosaicPosition: {x: 4, y: 4}
+  - name: ShoulderR_Wolf
+    spriteName: ShoulderR_Wolf
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 29c670896e010c847890bd7f0a479c04
+    layerID: 12
+    mosaicPosition: {x: 225, y: 837}
+  - name: AvArmR_Wolf
+    spriteName: AvArmR_Wolf
+    isGroup: 0
+    parentIndex: 0
+    spriteID: dc68cc93398fff04395ebe0de5dde29f
+    layerID: 11
+    mosaicPosition: {x: 296, y: 837}
+  - name: Chest_Wolf
+    spriteName: Chest_Wolf
+    isGroup: 0
+    parentIndex: 0
+    spriteID: a8050100b081dd346909b2e8a2cec166
+    layerID: 10
+    mosaicPosition: {x: 4, y: 442}
+  - name: LegR_Wolf
+    spriteName: LegR_Wolf
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 545107078652b5a4fa3b6ee2551004dc
+    layerID: 9
+    mosaicPosition: {x: 225, y: 605}
+  - name: FeetR_Wolf
+    spriteName: FeetR_Wolf
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 51e9f1eaec8b72249abd6b7ad4f6b03b
+    layerID: 8
+    mosaicPosition: {x: 4, y: 737}
+  - name: LegL_Wolf
+    spriteName: LegL_Wolf
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 0a250ce143ed59e40bdfa31c381738ee
+    layerID: 7
+    mosaicPosition: {x: 361, y: 605}
+  - name: FeetL_Wolf
+    spriteName: FeetL_Wolf
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 7aeafab0773ff7f40bcc70fd7047e0ac
+    layerID: 6
+    mosaicPosition: {x: 318, y: 4}
+  - name: ShoulderL_Wolf
+    spriteName: ShoulderL_Wolf
+    isGroup: 0
+    parentIndex: 0
+    spriteID: b6390de18881e4348bd116a4ed8041cd
+    layerID: 5
+    mosaicPosition: {x: 361, y: 837}
+  - name: AvArmL_Wolf
+    spriteName: AvArmL_Wolf
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 61258f239b7491c42a2298ed515c02ca
+    layerID: 4
+    mosaicPosition: {x: 432, y: 837}
+  - name: Tail_Wolf
+    spriteName: Tail_Wolf
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 249d2460e315bce4984f6fad091e4dc5
+    layerID: 3
+    mosaicPosition: {x: 225, y: 442}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 0
+  textureAssetName: Wolf Texture
+  prefabAssetName: Wolf Prefab
+  spriteLibAssetName: Wolf Sprite Lib
+  secondarySpriteTextures: []
