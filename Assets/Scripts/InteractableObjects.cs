@@ -8,7 +8,9 @@ public class InteractableObjects : MonoBehaviour
     public int id;
     public GameObject holdButtonUI;
     public GameObject mashButtonUI;
+
     public GameObject missionUI = null;
+    public GameObject canvas;
 
     // Start is called before the first frame update
     void Start()
@@ -28,11 +30,11 @@ public class InteractableObjects : MonoBehaviour
         {
             if(id == 1)
             {
-                missionUI = Instantiate(holdButtonUI, transform.position, Quaternion.identity, transform);
+                missionUI = Instantiate(holdButtonUI, transform.position, Quaternion.identity, canvas.transform);
             }
             else if(id == 2)
             {
-                missionUI = Instantiate(mashButtonUI, transform.position, Quaternion.identity, transform);
+                missionUI = Instantiate(mashButtonUI, transform.position, Quaternion.identity, canvas.transform);
             }
         }
     }

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -69,9 +70,14 @@ public class Player : MonoBehaviour
         }
         if (canMove)
         {
+            moveSpeed = 5f;
             movement.x = mainPlayer.GetAxis("HorizontalMove");
             movement.y = mainPlayer.GetAxis("VerticalMove");
-        }        
+        }
+        else if (!canMove)
+        {
+            moveSpeed = 0;
+        }
     }
 
     private void FixedUpdate()
@@ -99,6 +105,7 @@ public class Player : MonoBehaviour
                 if (mainPlayer.GetButton("Submit"))
                 {
                     timeAtStartHold += Time.deltaTime;
+                    mission.missionUI.transform.GetChild(0).GetComponent<Image>().fillAmount += Time.deltaTime;
                     if (timeAtStartHold >= maxTimeHold)
                     {
                         hasStartMission = false;
@@ -113,6 +120,7 @@ public class Player : MonoBehaviour
                 else if (mainPlayer.GetButtonUp("Submit"))
                 {
                     timeAtStartHold = 0;
+                    mission.missionUI.transform.GetChild(0).GetComponent<Image>().fillAmount = 0;
                     hasStartMission = false;
                     canMove = true;
                 }
@@ -125,6 +133,7 @@ public class Player : MonoBehaviour
                 if (mainPlayer.GetButtonDown("Submit"))
                 {
                     startMash++;
+                    mission.missionUI.transform.GetChild(0).GetComponent<Image>().fillAmount += 0.05f;
                     if (startMash >= maxTimesToMash)
                     {
                         hasStartMission = false;
@@ -138,7 +147,8 @@ public class Player : MonoBehaviour
                 }
                 else if (startMash > 0)
                 {
-                    startMash -= Time.deltaTime;
+                    startMash -= Time.deltaTime * 0.1f;
+                    mission.missionUI.transform.GetChild(0).GetComponent<Image>().fillAmount -= Time.deltaTime * 0.1f;
                 }
                 else if (startMash <= 0)
                 {
