@@ -88,6 +88,8 @@ public class Player : MonoBehaviour
                 else if (mainPlayer.GetButtonUp("Submit"))
                 {
                     timeAtStartHold = 0;
+                    hasStartMission = false;
+                    canMove = true;
                 }
             }
 

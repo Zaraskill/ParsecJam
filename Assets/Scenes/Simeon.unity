@@ -749,7 +749,7 @@ MonoBehaviour:
   moveSpeed: 5
   maxTimeHold: 3
   timeAtStartHold: 0
-  maxTimesToMash: 10
+  maxTimesToMash: 20
   startMash: 0
   isBoss: 0
 --- !u!61 &1435355360
