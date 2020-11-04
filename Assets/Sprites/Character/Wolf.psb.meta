@@ -103,17 +103,17 @@ ScriptedImporter:
     spriteBone:
     - name: Epaule Droite
       position: {x: 104.92256, y: 51.559853, z: 0}
-      rotation: {x: 0, y: 0, z: -0.99809986, w: 0.061618235}
-      length: 90.391815
+      rotation: {x: 0, y: 0, z: -0.9980998, w: 0.061617814}
+      length: 90.39185
       parentId: 1
     - name: Torse
-      position: {x: 152.81589, y: -83.11243, z: 0}
+      position: {x: 152.81589, y: -83.11249, z: 0}
       rotation: {x: 0, y: 0, z: 0.70954096, w: 0.7046642}
-      length: 154.71635
+      length: 154.71642
       parentId: -1
     - name: Tete
-      position: {x: 154.71634, y: 0.0000342069, z: 0}
-      rotation: {x: 0, y: 0, z: -0.01091012, w: 0.9999405}
+      position: {x: 154.7164, y: 0.0000342069, z: 0}
+      rotation: {x: 0, y: 0, z: -0.010910203, w: 0.99994045}
       length: 285.98355
       parentId: 1
     spriteOutline: []
@@ -619,12 +619,12 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: Epaule Gauche
-      position: {x: 21.973572, y: 133.73419, z: 0}
+      position: {x: 21.973572, y: 133.73413, z: 0}
       rotation: {x: 0, y: 0, z: -0.6416136, w: 0.7670281}
-      length: 126.831985
+      length: 126.832054
       parentId: -1
     - name: AvBras Gauche
-      position: {x: 126.83199, y: -0.0000014720263, z: 0}
+      position: {x: 126.832054, y: -0.000023037452, z: 0}
       rotation: {x: 0, y: 0, z: -0.15085326, w: 0.9885562}
       length: 145.18028
       parentId: 0
@@ -693,7 +693,7 @@ ScriptedImporter:
     - position: {x: 62.786987, y: 52.593018}
       boneWeight:
         weight0: 0.9
-        weight1: 0.1
+        weight1: 0.100000024
         weight2: 0
         weight3: 0
         boneIndex0: 0
@@ -986,7 +986,7 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: AvBras Gauche
-      position: {x: 126.831924, y: 0.00000052472933, z: 0}
+      position: {x: 126.83205, y: -0.000021040696, z: 0}
       rotation: {x: 0, y: 0, z: -0.15085326, w: 0.9885562}
       length: 145.18028
       parentId: 2
@@ -998,7 +998,7 @@ ScriptedImporter:
     - name: Epaule Gauche
       position: {x: 15.973572, y: 288.73413, z: 0}
       rotation: {x: 0, y: 0, z: -0.6416136, w: 0.7670281}
-      length: 126.831985
+      length: 126.832054
       parentId: -1
     spriteOutline: []
     vertices:
@@ -1472,34 +1472,34 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: AvBras Gauche
-      position: {x: 126.83203, y: -0.000041764262, z: 0}
+      position: {x: 126.83203, y: -0.0000220294, z: 0}
       rotation: {x: 0, y: 0, z: -0.15085325, w: 0.98855615}
-      length: 145.1803
+      length: 145.18027
       parentId: 1
     - name: Epaule Gauche
       position: {x: 156.27626, y: -83.237465, z: 0}
       rotation: {x: 0, y: 0, z: -0.99635994, w: 0.08524603}
-      length: 126.831985
+      length: 126.832054
       parentId: 3
     - name: Tete
-      position: {x: 154.71632, y: 0.00001839657, z: 0}
-      rotation: {x: 0, y: 0, z: -0.010910115, w: 0.9999405}
+      position: {x: 154.71638, y: 0.00001839657, z: 0}
+      rotation: {x: 0, y: 0, z: -0.010910199, w: 0.9999405}
       length: 285.98355
       parentId: 3
     - name: Torse
-      position: {x: 67.00788, y: 0.000013309977, z: 0}
+      position: {x: 67.00782, y: 0.0000035911594, z: 0}
       rotation: {x: 0, y: 0, z: 0.08330865, w: 0.9965238}
-      length: 154.71635
+      length: 154.71642
       parentId: 7
     - name: Epaule Droite
       position: {x: 104.92255, y: 51.55983, z: 0}
-      rotation: {x: 0, y: 0, z: -0.9980998, w: 0.06161824}
-      length: 90.39184
+      rotation: {x: 0, y: 0, z: -0.99809986, w: 0.061617784}
+      length: 90.39185
       parentId: 3
     - name: AvBras Droite
-      position: {x: 90.391884, y: -0.00002464365, z: 0}
-      rotation: {x: 0, y: 0, z: -0.13308746, w: 0.99110436}
-      length: 117.397224
+      position: {x: 90.39189, y: 0.00003405952, z: 0}
+      rotation: {x: 0, y: 0, z: -0.133087, w: 0.99110436}
+      length: 117.39723
       parentId: 4
     - name: Pelvis
       position: {x: 73.87808, y: -6.605011, z: 0}
@@ -1509,7 +1509,7 @@ ScriptedImporter:
     - name: Bassin
       position: {x: 21.762285, y: -0.0000021489104, z: 0}
       rotation: {x: 0, y: 0, z: 0.018740065, w: 0.9998244}
-      length: 67.007904
+      length: 67.00784
       parentId: 6
     spriteOutline: []
     vertices:
@@ -1946,13 +1946,13 @@ ScriptedImporter:
     spriteID: 545107078652b5a4fa3b6ee2551004dc
     internalID: 0
     spriteBone:
-    - name: Jambe Gauche
+    - name: Jambe_Gauche
       position: {x: 4.0417876, y: -48.489407, z: 0}
-      rotation: {x: 0, y: 0, z: -0.99898994, w: 0.04493415}
-      length: 138.06415
+      rotation: {x: 0, y: 0, z: -0.99898994, w: 0.0449347}
+      length: 138.06416
       parentId: 2
     - name: AvBras Gauche
-      position: {x: 127.38022, y: 275.8971, z: 0}
+      position: {x: 127.38022, y: 275.89697, z: 0}
       rotation: {x: 0, y: 0, z: -0.74997973, w: 0.6614608}
       length: 145.1803
       parentId: -1
@@ -1969,11 +1969,11 @@ ScriptedImporter:
     - name: Bassin
       position: {x: 21.762255, y: -0.000011233358, z: 0}
       rotation: {x: 0, y: 0, z: 0.018740065, w: 0.9998244}
-      length: 67.007904
+      length: 67.00784
       parentId: 2
-    - name: Pied Gauche
-      position: {x: 138.06424, y: 0.00013613768, z: 0}
-      rotation: {x: 0, y: 0, z: 0.19096586, w: 0.9815967}
+    - name: Cheville_Gauche
+      position: {x: 138.06424, y: -0.0000057358984, z: 0}
+      rotation: {x: 0, y: 0, z: 0.19096532, w: 0.9815968}
       length: 184.736
       parentId: 0
     spriteOutline: []
@@ -1981,7 +1981,7 @@ ScriptedImporter:
     - position: {x: 92.45401, y: 3.9450073}
       boneWeight:
         weight0: 0.9
-        weight1: 0.1
+        weight1: 0.100000024
         weight2: 0
         weight3: 0
         boneIndex0: 0
@@ -2191,7 +2191,7 @@ ScriptedImporter:
     - position: {x: 10.468994, y: 85.992004}
       boneWeight:
         weight0: 0.9
-        weight1: 0.1
+        weight1: 0.100000024
         weight2: 0
         weight3: 0
         boneIndex0: 0
@@ -2251,7 +2251,7 @@ ScriptedImporter:
     - position: {x: 68.808014, y: 0.4290161}
       boneWeight:
         weight0: 0.8
-        weight1: 0.2
+        weight1: 0.19999999
         weight2: 0
         weight3: 0
         boneIndex0: 0
@@ -2261,7 +2261,7 @@ ScriptedImporter:
     - position: {x: 92.507996, y: 0}
       boneWeight:
         weight0: 0.9
-        weight1: 0.1
+        weight1: 0.100000024
         weight2: 0
         weight3: 0
         boneIndex0: 0
@@ -2423,20 +2423,20 @@ ScriptedImporter:
     spriteID: 51e9f1eaec8b72249abd6b7ad4f6b03b
     internalID: 0
     spriteBone:
-    - name: Jambe Gauche
+    - name: Jambe_Gauche
       position: {x: 77.218506, y: 336.84863, z: 0}
-      rotation: {x: 0, y: 0, z: -0.7440735, w: 0.66809785}
-      length: 138.06413
+      rotation: {x: 0, y: 0, z: -0.7440731, w: 0.6680982}
+      length: 138.06418
       parentId: -1
-    - name: Pied Gauche
-      position: {x: 138.0641, y: 0.00012304289, z: 0}
-      rotation: {x: 0, y: 0, z: 0.19096585, w: 0.98159665}
-      length: 184.73598
+    - name: Cheville_Gauche
+      position: {x: 138.06413, y: -0.000024505123, z: 0}
+      rotation: {x: 0, y: 0, z: 0.19096532, w: 0.9815968}
+      length: 184.73604
       parentId: 0
-    - name: Pied Droite
-      position: {x: 28.32013, y: 220.7091, z: 0}
+    - name: Cheville_Droite
+      position: {x: 28.320145, y: 220.7091, z: 0}
       rotation: {x: 0, y: 0, z: -0.6347097, w: 0.7727507}
-      length: 178.75293
+      length: 178.75298
       parentId: -1
     spriteOutline: []
     vertices:
@@ -2904,15 +2904,15 @@ ScriptedImporter:
     spriteID: 0a250ce143ed59e40bdfa31c381738ee
     internalID: 0
     spriteBone:
-    - name: Jambe Gauche
+    - name: Jambe_Gauche
       position: {x: 4.04178, y: -48.489414, z: 0}
-      rotation: {x: 0, y: 0, z: -0.99898994, w: 0.04493415}
-      length: 138.06415
+      rotation: {x: 0, y: 0, z: -0.99898994, w: 0.0449347}
+      length: 138.06416
       parentId: 2
-    - name: Jambe Droite
+    - name: Jambe_Droite
       position: {x: -10.607316, y: 20.041204, z: 0}
-      rotation: {x: 0, y: 0, z: -0.9820845, w: 0.18844108}
-      length: 117.144424
+      rotation: {x: 0, y: 0, z: -0.9820845, w: 0.18844119}
+      length: 117.14443
       parentId: 2
     - name: Pelvis
       position: {x: 37.878082, y: 134.39502, z: 0}
@@ -2927,17 +2927,17 @@ ScriptedImporter:
     - name: Bassin
       position: {x: 21.762247, y: -0.000017909078, z: 0}
       rotation: {x: 0, y: 0, z: 0.018740065, w: 0.9998244}
-      length: 67.007904
+      length: 67.00784
       parentId: 2
     - name: AvBras Droite
-      position: {x: 12.270447, y: 236.82538, z: 0}
-      rotation: {x: 0, y: 0, z: -0.7537671, w: 0.6571417}
-      length: 117.39724
+      position: {x: 12.270447, y: 236.82526, z: 0}
+      rotation: {x: 0, y: 0, z: -0.75376713, w: 0.6571417}
+      length: 117.397255
       parentId: -1
-    - name: Pied Droite
-      position: {x: 117.14463, y: -0.0000024604924, z: 0}
-      rotation: {x: 0, y: 0, z: 0.006888827, w: 0.99997634}
-      length: 178.75293
+    - name: Cheville_Droite
+      position: {x: 117.1446, y: -0.000009728696, z: 0}
+      rotation: {x: 0, y: 0, z: 0.006888725, w: 0.99997634}
+      length: 178.75296
       parentId: 1
     spriteOutline: []
     vertices:
@@ -3386,20 +3386,20 @@ ScriptedImporter:
     spriteID: 7aeafab0773ff7f40bcc70fd7047e0ac
     internalID: 0
     spriteBone:
-    - name: Jambe Droite
+    - name: Jambe_Droite
       position: {x: 37.145782, y: 313.924, z: 0}
-      rotation: {x: 0, y: 0, z: -0.64001805, w: 0.76835996}
-      length: 117.14442
+      rotation: {x: 0, y: 0, z: -0.6400179, w: 0.76836}
+      length: 117.144424
       parentId: -1
-    - name: Jambe Gauche
+    - name: Jambe_Gauche
       position: {x: 107.218506, y: 314.84866, z: 0}
-      rotation: {x: 0, y: 0, z: -0.7440735, w: 0.66809785}
-      length: 138.06413
+      rotation: {x: 0, y: 0, z: -0.7440731, w: 0.6680982}
+      length: 138.06418
       parentId: -1
-    - name: Pied Droite
-      position: {x: 117.144424, y: 0.00005563185, z: 0}
-      rotation: {x: 0, y: 0, z: 0.006888846, w: 0.99997634}
-      length: 178.75291
+    - name: Cheville_Droite
+      position: {x: 117.14442, y: -0.0000060264347, z: 0}
+      rotation: {x: 0, y: 0, z: 0.006888716, w: 0.99997634}
+      length: 178.75296
       parentId: 0
     spriteOutline: []
     vertices:
@@ -3566,7 +3566,7 @@ ScriptedImporter:
     - position: {x: 55.868988, y: 227}
       boneWeight:
         weight0: 0.6
-        weight1: 0.4
+        weight1: 0.39999998
         weight2: 0
         weight3: 0
         boneIndex0: 0
@@ -3596,7 +3596,7 @@ ScriptedImporter:
     - position: {x: 43.26001, y: 192.60501}
       boneWeight:
         weight0: 0.8
-        weight1: 0.2
+        weight1: 0.19999999
         weight2: 0
         weight3: 0
         boneIndex0: 0
@@ -3928,9 +3928,9 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: Epaule Droite
-      position: {x: 20.53366, y: 61.452026, z: 0}
-      rotation: {x: 0, y: 0, z: -0.65960455, w: 0.7516129}
-      length: 90.391846
+      position: {x: 20.53366, y: 61.451965, z: 0}
+      rotation: {x: 0, y: 0, z: -0.65960485, w: 0.75161254}
+      length: 90.39189
       parentId: -1
     spriteOutline: []
     vertices:
@@ -4320,14 +4320,14 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: AvBras Droite
-      position: {x: 90.39184, y: -0.000070401264, z: 0}
-      rotation: {x: 0, y: 0, z: -0.13308744, w: 0.99110436}
-      length: 117.39723
+      position: {x: 90.39195, y: -0.00001727306, z: 0}
+      rotation: {x: 0, y: 0, z: -0.133087, w: 0.99110436}
+      length: 117.39728
       parentId: 1
     - name: Epaule Droite
-      position: {x: 14.533661, y: 216.45203, z: 0}
-      rotation: {x: 0, y: 0, z: -0.65960455, w: 0.7516129}
-      length: 90.391846
+      position: {x: 14.533661, y: 216.4519, z: 0}
+      rotation: {x: 0, y: 0, z: -0.65960485, w: 0.75161254}
+      length: 90.39189
       parentId: -1
     spriteOutline: []
     vertices:
@@ -4796,7 +4796,7 @@ ScriptedImporter:
       length: 138.90881
       parentId: -1
     - name: AvBras Gauche
-      position: {x: 63.38022, y: 187.8971, z: 0}
+      position: {x: 63.38022, y: 187.89697, z: 0}
       rotation: {x: 0, y: 0, z: -0.74997973, w: 0.6614608}
       length: 145.1803
       parentId: -1
@@ -4829,9 +4829,9 @@ ScriptedImporter:
         weight2: 0
         weight3: 0
         boneIndex0: 0
-        boneIndex1: 1
-        boneIndex2: 1
-        boneIndex3: 1
+        boneIndex1: 0
+        boneIndex2: 0
+        boneIndex3: 0
     - position: {x: 185.08398, y: 49.962006}
       boneWeight:
         weight0: 1
@@ -4924,12 +4924,12 @@ ScriptedImporter:
         boneIndex3: 0
     - position: {x: 140.90201, y: 111.65997}
       boneWeight:
-        weight0: 0.9
-        weight1: 0.1
+        weight0: 1
+        weight1: 0
         weight2: 0
         weight3: 0
         boneIndex0: 0
-        boneIndex1: 1
+        boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
     - position: {x: 125.55701, y: 93.00299}
@@ -5263,7 +5263,7 @@ ScriptedImporter:
         boneIndex2: 0
         boneIndex3: 0
     spritePhysicsOutline: []
-    indices: 260000001a00000020000000000000002c000000270000002d000000270000001f0000002d0000001f0000002a0000002700000001000000000000001d0000002c0000001e0000002d000000020000002700000003000000020000002d0000002d00000028000000030000000400000003000000280000002400000004000000280000002a000000220000002d000000010000002700000002000000220000000d0000000c000000240000000500000004000000220000002a0000000d00000024000000280000002200000024000000220000000c0000000c0000000b000000230000000b0000000a00000009000000240000000c00000023000000060000000500000023000000240000002300000005000000070000000600000023000000080000000700000009000000070000000b00000009000000230000000b000000070000001f000000270000002c000000280000002d000000220000002c000000000000001e0000001c0000001b0000002500000019000000180000002b0000001a0000001900000020000000190000002b00000020000000260000001b0000001a0000002c0000001c0000002500000025000000290000001f0000001b00000026000000250000002600000029000000250000001f000000290000002a0000000f00000029000000200000002000000029000000260000001d0000001c0000002c000000290000000e0000002a000000210000002b000000180000001500000014000000160000001600000014000000210000001200000011000000130000001300000011000000140000001700000016000000210000002b0000002100000011000000180000001700000021000000100000000f0000002000000010000000200000002b0000002b00000011000000100000000f0000000e000000290000001400000011000000210000000e0000000d0000002a0000002c000000250000001f000000
+    indices: 260000001a0000002000000019000000180000002b0000001a0000001900000020000000190000002b00000020000000260000001b0000001a0000002c0000001c0000002500000025000000290000001f0000001b00000026000000250000002600000029000000250000001f000000290000002a0000000f00000029000000200000002000000029000000260000001d0000001c0000002c000000210000002b000000180000000e0000000d0000002a0000001500000014000000160000001600000014000000210000001200000011000000130000001300000011000000140000001700000016000000210000002b0000002100000011000000180000001700000021000000100000000f0000002000000010000000200000002b0000002b00000011000000100000000f0000000e000000290000001400000011000000210000001c0000001b00000025000000290000000e0000002a0000002c000000000000001e000000220000000d0000000c000000000000002c000000270000002d000000270000001f0000002d0000001f0000002a0000002700000001000000000000001d0000002c0000001e0000002d000000020000002700000003000000020000002d0000002d00000028000000030000000400000003000000280000002400000004000000280000002a000000220000002d0000000100000027000000020000002400000005000000040000001f000000270000002c000000220000002a0000000d00000024000000280000002200000024000000220000000c0000000c0000000b000000230000000b0000000a00000009000000240000000c00000023000000060000000500000023000000240000002300000005000000070000000600000023000000080000000700000009000000070000000b00000009000000230000000b00000007000000280000002d000000220000002c000000250000001f000000
     edges:
     - {x: 1, y: 0}
     - {x: 2, y: 1}
@@ -5412,46 +5412,46 @@ ScriptedImporter:
     - name: Bassin
       position: {x: 21.762266, y: 0.000003334717, z: 0}
       rotation: {x: 0, y: 0, z: 0.018740078, w: 0.9998244}
-      length: 67.007904
+      length: 67.00784
       parentId: 0
     - name: Torse
-      position: {x: 67.00788, y: 0.000015508465, z: 0}
+      position: {x: 67.00782, y: 0.000005789649, z: 0}
       rotation: {x: 0, y: 0, z: 0.083308674, w: 0.9965238}
-      length: 154.71634
+      length: 154.7164
       parentId: 1
     - name: Tete
-      position: {x: 154.71634, y: 0.0000002841823, z: 0}
-      rotation: {x: 0, y: 0, z: -0.010910152, w: 0.9999405}
+      position: {x: 154.7164, y: 0.0000002841823, z: 0}
+      rotation: {x: 0, y: 0, z: -0.010910236, w: 0.9999405}
       length: 285.9835
       parentId: 2
     - name: Epaule Gauche
       position: {x: 156.27626, y: -83.23748, z: 0}
       rotation: {x: 0, y: -0, z: -0.99635994, w: 0.08524605}
-      length: 126.83201
+      length: 126.83207
       parentId: 2
     - name: AvBras Gauche
-      position: {x: 126.83205, y: -0.000015624873, z: 0}
+      position: {x: 126.83211, y: -0.000037190315, z: 0}
       rotation: {x: 0, y: 0, z: -0.15085326, w: 0.9885562}
       length: 145.1803
       parentId: 4
     - name: Epaule Droite
       position: {x: 104.922554, y: 51.559822, z: 0}
-      rotation: {x: 0, y: -0, z: -0.9980998, w: 0.061618205}
-      length: 90.39185
+      rotation: {x: 0, y: -0, z: -0.99809986, w: 0.061617732}
+      length: 90.39186
       parentId: 2
     - name: AvBras Droite
-      position: {x: 90.39185, y: -0.00002764875, z: 0}
-      rotation: {x: 0, y: 0, z: -0.13308746, w: 0.99110436}
+      position: {x: 90.391884, y: 0.000049610404, z: 0}
+      rotation: {x: 0, y: 0, z: -0.13308698, w: 0.99110436}
       length: 117.39724
       parentId: 6
-    - name: Jambe Gauche
+    - name: Jambe_Gauche
       position: {x: 4.041738, y: -48.489403, z: 0}
-      rotation: {x: 0, y: -0, z: -0.99898994, w: 0.044934116}
-      length: 138.06415
+      rotation: {x: 0, y: -0, z: -0.99898994, w: 0.04493471}
+      length: 138.06416
       parentId: 0
-    - name: Jambe Droite
+    - name: Jambe_Droite
       position: {x: -10.607388, y: 20.041206, z: 0}
-      rotation: {x: 0, y: -0, z: -0.9820845, w: 0.18844108}
+      rotation: {x: 0, y: -0, z: -0.9820845, w: 0.18844122}
       length: 117.14442
       parentId: 0
     - name: Queue
@@ -5459,14 +5459,14 @@ ScriptedImporter:
       rotation: {x: 0, y: 0, z: -0.6276603, w: 0.7784874}
       length: 138.9088
       parentId: 1
-    - name: Pied Droite
-      position: {x: 117.144424, y: 0.000031367275, z: 0}
-      rotation: {x: 0, y: 0, z: 0.0068888147, w: 0.9999763}
+    - name: Cheville_Droite
+      position: {x: 117.14442, y: 0.000012003822, z: 0}
+      rotation: {x: 0, y: 0, z: 0.0068886834, w: 0.9999763}
       length: 178.75293
       parentId: 9
-    - name: Pied Gauche
-      position: {x: 138.06416, y: 0.00011363042, z: 0}
-      rotation: {x: 0, y: 0, z: 0.19096589, w: 0.9815967}
+    - name: Cheville_Gauche
+      position: {x: 138.06416, y: -0.000028132461, z: 0}
+      rotation: {x: 0, y: 0, z: 0.19096532, w: 0.9815968}
       length: 184.73601
       parentId: 8
     parts:
