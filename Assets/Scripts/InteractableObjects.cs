@@ -6,6 +6,10 @@ using UnityEngine.UI;
 public class InteractableObjects : MonoBehaviour
 {
     public int id;
+    public GameObject holdButtonUI;
+    public GameObject mashButtonUI;
+    public GameObject missionUI = null;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,18 +22,26 @@ public class InteractableObjects : MonoBehaviour
         
     }
 
-    void ButtonMash()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-
+        if(collision.CompareTag("Player"))
+        {
+            if(id == 1)
+            {
+                missionUI = Instantiate(holdButtonUI, transform.position, Quaternion.identity, transform);
+            }
+            else if(id == 2)
+            {
+                missionUI = Instantiate(mashButtonUI, transform.position, Quaternion.identity, transform);
+            }
+        }
     }
 
-    void ButtonHold()
+    private void OnTriggerExit2D(Collider2D collision)
     {
-
-    }
-
-    void InputSequence()
-    {
-
+        if(collision.CompareTag("Player") && missionUI != null)
+        {
+            Destroy(missionUI);
+        }
     }
 }

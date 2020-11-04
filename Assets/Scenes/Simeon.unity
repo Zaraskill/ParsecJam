@@ -422,6 +422,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 1
+  holdButtonUI: {fileID: 4596605818028301996, guid: 016892dffa3588e4db04399ae0f2cad4,
+    type: 3}
+  mashButtonUI: {fileID: 4596605818028301996, guid: 016892dffa3588e4db04399ae0f2cad4,
+    type: 3}
+  missionUI: {fileID: 0}
 --- !u!1001 &1024936589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -643,7 +648,7 @@ GameObject:
   - component: {fileID: 1435355360}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1021,6 +1026,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 2
+  holdButtonUI: {fileID: 4596605818028301996, guid: 016892dffa3588e4db04399ae0f2cad4,
+    type: 3}
+  mashButtonUI: {fileID: 4596605818028301996, guid: 016892dffa3588e4db04399ae0f2cad4,
+    type: 3}
+  missionUI: {fileID: 0}
 --- !u!1 &2014692806
 GameObject:
   m_ObjectHideFlags: 0

@@ -106,6 +106,7 @@ public class Player : MonoBehaviour
                         timeAtStartHold = 0;
                         canMove = true;
                         GameManager.instance.MissionDone(true, isBoss, idPlayer);
+                        Destroy(mission.missionUI);
                         //Completed
                     }
                 }
@@ -118,7 +119,7 @@ public class Player : MonoBehaviour
             }
 
             //Mash Button
-            if (mission.id == 2)
+            else if (mission.id == 2)
             {
                 //DisplayUI
                 if (mainPlayer.GetButtonDown("Submit"))
@@ -131,6 +132,7 @@ public class Player : MonoBehaviour
                         startMash = 0;
                         canMove = true;
                         GameManager.instance.MissionDone(true, isBoss, idPlayer);
+                        Destroy(mission.missionUI);
                         //Completed
                     }
                 }
@@ -145,7 +147,7 @@ public class Player : MonoBehaviour
             }
 
             //Input Suite
-            if (mission.id == 3)
+            else if (mission.id == 3)
             {
 
             }
