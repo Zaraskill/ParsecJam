@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     public int day = 0;
     private List<int> playersBoss;
     private int[] playersScoreFinal;
-    public int[] playersScore;
+    private int[] playersScore;
     private Player[] listPlayers;
     public int boss;
 
@@ -23,10 +23,10 @@ public class GameManager : MonoBehaviour
     public float timerSpawnMissions = 15f;
     public int numberMissionsByDay = 10;
 
-    public float timeDayLeft;
-    public float timeVoteLeft;
-    public float timerSpawnMissionsLeft;
-    public int numberMissionsDone = 0;
+    private float timeDayLeft;
+    private float timeVoteLeft;
+    private float timerSpawnMissionsLeft;
+    private int numberMissionsDone = 0;
 
     private void Awake()
     {
@@ -160,6 +160,18 @@ public class GameManager : MonoBehaviour
     {
 
     }
+
+    public int ScorePlayer(int index)
+    {
+        return playersScore[index];
+    }
+
+    public float TimerLeft()
+    {
+        return timeDayLeft;
+    }
+
+
 }
 
 public enum GAME_STATE
