@@ -9,7 +9,13 @@ public class UIManager : MonoBehaviour
 
     public static UIManager instance;
 
+    public TMP_Text timer;
+    public TMP_Text timerVote;
+    public GameObject voteCanvas;
     public List<TMP_Text> scores;
+    public List<Image> voted;
+
+    private bool isVoting = false;
 
     private void Awake()
     {
@@ -32,7 +38,36 @@ public class UIManager : MonoBehaviour
     void Update()
     {
         scores[0].text = GameManager.instance.ScorePlayer(0).ToString();
-        scores[1].text = GameManager.instance.ScorePlayer(1).ToString();
-        scores[2].text = GameManager.instance.ScorePlayer(2).ToString();
+        //scores[1].text = GameManager.instance.ScorePlayer(1).ToString();
+        //scores[2].text = GameManager.instance.ScorePlayer(2).ToString();
+
+        if (!isVoting)
+        {
+            float time = GameManager.instance.TimerLeft();
+            timer.text = string.Format("{0} : {1:F0}", ((int)time / 60), time % 60);
+        }
+        else
+        {
+            float time = GameManager.instance.TimerVoteLeft();
+            timerVote.text = string.Format("{0} : {1:F0}", ((int)time / 60), time % 60);
+        }
+        
+
+
     }
+
+    public void DisplayVote()
+    {
+        isVoting = true;
+        voteCanvas.SetActive(true);
+        timer.gameObject.SetActive(false);
+    }
+
+    public void UndisplayVote()
+    {
+        isVoting = false;
+        voteCanvas.SetActive(false);
+        timer.gameObject.SetActive(true);
+    }
+
 }

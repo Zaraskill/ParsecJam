@@ -24,9 +24,10 @@ public class Player : MonoBehaviour
     public float startMash = 0;
 
     public bool isBoss;
+    public bool hasVoted;
     private bool canDoMission;
     private bool hasStartMission;
-    private bool canMove = true;
+    public bool canMove = true;
     private InteractableObjects mission;
 
     // Start is called before the first frame update
@@ -39,6 +40,29 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.instance.HasToVote())
+        {
+            if (mainPlayer.GetButtonDown("VotedA"))
+            {
+                hasVoted = true;
+                //score
+            }
+            else if (mainPlayer.GetButtonDown("VotedB"))
+            {
+                hasVoted = true;
+                //score
+            }
+            else if (mainPlayer.GetButtonDown("VotedX"))
+            {
+                hasVoted = true;
+                //score
+            }
+            else if (mainPlayer.GetButtonDown("VotedY"))
+            {
+                hasVoted = true;
+                //score
+            }
+        }
         if (canDoMission)
         {
             CheckMission();

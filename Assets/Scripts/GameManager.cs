@@ -81,9 +81,10 @@ public class GameManager : MonoBehaviour
                 break;
             case GAME_STATE.votingTime:
                 timeVoteLeft -= Time.deltaTime;
-                if (timeVoteLeft <= 0)
+                if (timeVoteLeft <= 0 || CheckVote() )
                 {
-                    //Enlève l'UI
+                    UIManager.instance.UndisplayVote();
+
                     if (day == numberDays)
                     {
                         SwitchStateGame(GAME_STATE.results);
@@ -127,6 +128,7 @@ public class GameManager : MonoBehaviour
         switch (newState)
         {
             case GAME_STATE.dayTime:
+                Unvote();
                 timeDayLeft = timeDay;                
                 int random;
                 do
@@ -147,8 +149,15 @@ public class GameManager : MonoBehaviour
                 playersScoreFinal[boss] = score;
                 listPlayers[boss].isBoss = false;
                 timeVoteLeft = timeVote;
-                // Affichage UI résultats
+                UIManager.instance.DisplayVote();
                 stateGame = newState;
+
+                foreach (Player player in listPlayers)
+                {
+                    player.hasVoted = false;
+                    player.canMove = false;
+                }
+
                 break;
             case GAME_STATE.results:
                 stateGame = newState;
@@ -171,6 +180,36 @@ public class GameManager : MonoBehaviour
         return timeDayLeft;
     }
 
+    public float TimerVoteLeft()
+    {
+        return timeVoteLeft;
+    }
+
+    public bool HasToVote()
+    {
+        return stateGame == GAME_STATE.votingTime;
+    }
+
+    private bool CheckVote()
+    {
+        foreach(Player player in listPlayers)
+        {
+            if (!player.hasVoted)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private void Unvote()
+    {
+        foreach(Player player in listPlayers)
+        {
+            player.hasVoted = false;
+            player.canMove = true;
+        }
+    }
 
 }
 
