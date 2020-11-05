@@ -109,7 +109,7 @@ public class Player : MonoBehaviour
                 if (mainPlayer.GetButton("Submit"))
                 {
                     timeAtStartHold += maxTimeHold * Time.deltaTime;
-                    mission.missionUI.transform.GetChild(1).GetComponent<Image>().fillAmount += Time.deltaTime;
+                    mission.missionUI.transform.GetChild(2).GetComponent<Image>().fillAmount += Time.deltaTime;
                     if (timeAtStartHold >= maxTimeHold)
                     {
                         hasStartMission = false;
@@ -125,7 +125,7 @@ public class Player : MonoBehaviour
                 else if (mainPlayer.GetButtonUp("Submit"))
                 {
                     timeAtStartHold = 0;
-                    mission.missionUI.transform.GetChild(1).GetComponent<Image>().fillAmount = 0;
+                    mission.missionUI.transform.GetChild(2).GetComponent<Image>().fillAmount = 0;
                     hasStartMission = false;
                     canMove = true;
                 }
@@ -158,7 +158,7 @@ public class Player : MonoBehaviour
                 {
                     startMash = 0;
                 }
-                mission.missionUI.transform.GetChild(1).GetComponent<Image>().fillAmount = startMash / maxTimesToMash;
+                mission.missionUI.transform.GetChild(2).GetComponent<Image>().fillAmount = startMash / maxTimesToMash;
             }
         }
     }

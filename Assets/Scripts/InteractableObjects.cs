@@ -16,6 +16,7 @@ public class InteractableObjects : MonoBehaviour
     void Start()
     {
         canvas = FindObjectOfType<CanvasScaler>().gameObject;
+        id = Random.Range(1, 3);
     }
 
     // Update is called once per frame
