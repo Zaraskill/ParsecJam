@@ -41,7 +41,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.instance.HasToVote())
+        if (GameManager.instance.HasToVote() && !hasVoted)
         {
             if (mainPlayer.GetButtonDown("VotedA"))
             {
@@ -108,8 +108,8 @@ public class Player : MonoBehaviour
                 //DisplayUI
                 if (mainPlayer.GetButton("Submit"))
                 {
-                    timeAtStartHold += Time.deltaTime;
-                    mission.missionUI.transform.GetChild(0).GetComponent<Image>().fillAmount += Time.deltaTime;
+                    timeAtStartHold += maxTimeHold * Time.deltaTime;
+                    mission.missionUI.transform.GetChild(1).GetComponent<Image>().fillAmount += Time.deltaTime;
                     if (timeAtStartHold >= maxTimeHold)
                     {
                         hasStartMission = false;
@@ -124,7 +124,7 @@ public class Player : MonoBehaviour
                 else if (mainPlayer.GetButtonUp("Submit"))
                 {
                     timeAtStartHold = 0;
-                    mission.missionUI.transform.GetChild(0).GetComponent<Image>().fillAmount = 0;
+                    mission.missionUI.transform.GetChild(1).GetComponent<Image>().fillAmount = 0;
                     hasStartMission = false;
                     canMove = true;
                 }
@@ -137,7 +137,6 @@ public class Player : MonoBehaviour
                 if (mainPlayer.GetButtonDown("Submit"))
                 {
                     startMash++;
-                    mission.missionUI.transform.GetChild(0).GetComponent<Image>().fillAmount += 0.05f;
                     if (startMash >= maxTimesToMash)
                     {
                         hasStartMission = false;
@@ -151,19 +150,13 @@ public class Player : MonoBehaviour
                 }
                 else if (startMash > 0)
                 {
-                    startMash -= Time.deltaTime * 0.1f;
-                    mission.missionUI.transform.GetChild(0).GetComponent<Image>().fillAmount -= Time.deltaTime * 0.1f;
+                    startMash -= Time.deltaTime * 0.5f;
                 }
                 else if (startMash <= 0)
                 {
                     startMash = 0;
                 }
-            }
-
-            //Input Suite
-            else if (mission.id == 3)
-            {
-
+                mission.missionUI.transform.GetChild(1).GetComponent<Image>().fillAmount = startMash / maxTimesToMash;
             }
         }
     }
