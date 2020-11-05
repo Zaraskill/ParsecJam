@@ -46,10 +46,13 @@ MonoBehaviour:
   stateGame: 0
   numberDays: 0
   day: 0
+  playersScoreFinal: 
+  missionsList:
+  - {fileID: 9031863870549149258, guid: 97e1049c7ef7e8a4398991295eb9fe22, type: 3}
+  spawnList: []
+  boss: 0
   timeDay: 120
   timeVote: 120
   timerSpawnMissions: 15
   numberMissionsByDay: 10
-  timeDayLeft: 0
-  timeVoteLeft: 0
   timerSpawnMissionsLeft: 0

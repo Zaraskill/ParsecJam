@@ -15,7 +15,7 @@ public class InteractableObjects : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        canvas = FindObjectOfType<CanvasScaler>().gameObject;
+        //canvas = FindObjectOfType<CanvasScaler>().gameObject;
         id = Random.Range(1, 3);
     }
 
@@ -31,11 +31,11 @@ public class InteractableObjects : MonoBehaviour
         {
             if(id == 1)
             {
-                missionUI = Instantiate(holdButtonUI, transform.position, Quaternion.identity, canvas.transform);
+                missionUI = Instantiate(holdButtonUI, transform.position, Quaternion.identity, collision.GetComponent<Player>().canvas.transform);
             }
             else if(id == 2)
             {
-                missionUI = Instantiate(mashButtonUI, transform.position, Quaternion.identity, canvas.transform);
+                missionUI = Instantiate(mashButtonUI, transform.position, Quaternion.identity, collision.GetComponent<Player>().canvas.transform);
             }
         }
     }
