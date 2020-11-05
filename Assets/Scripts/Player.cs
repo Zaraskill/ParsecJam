@@ -31,6 +31,7 @@ public class Player : MonoBehaviour
     public bool canMove = true;
     private InteractableObjects mission;
 
+    private Animator _animator;
     public GameObject canvas;
 
     // Start is called before the first frame update
@@ -38,6 +39,7 @@ public class Player : MonoBehaviour
     {
         mainPlayer = ReInput.players.GetPlayer(idPlayer);
         _rigidbody = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -79,10 +81,20 @@ public class Player : MonoBehaviour
             moveSpeed = 5f;
             movement.x = mainPlayer.GetAxis("HorizontalMove");
             movement.y = mainPlayer.GetAxis("VerticalMove");
+            _animator.SetFloat("Speed", Mathf.Abs(movement.x));
         }
         else if (!canMove)
         {
             moveSpeed = 0;
+        }
+
+        if (movement.x > 0)
+        {
+            transform.localScale = new Vector3(-0.2f, 0.2f, 1f);
+        }
+        else if(movement.x < 0)
+        {
+            transform.localScale = new Vector3(0.2f, 0.2f, 1f);
         }
     }
 
@@ -97,7 +109,8 @@ public class Player : MonoBehaviour
         {
             if (mainPlayer.GetButtonDown("Submit"))
             {
-                Debug.Log("Coucou");                
+                Debug.Log("Coucou");
+                _animator.SetBool("Tasking", true);
                 hasStartMission = true;
                 canMove = false;
             }
@@ -114,6 +127,7 @@ public class Player : MonoBehaviour
                     mission.missionUI.transform.GetChild(3).GetComponent<Image>().fillAmount += Time.deltaTime;
                     if (timeAtStartHold >= maxTimeHold)
                     {
+                        _animator.SetBool("Tasking", false);
                         hasStartMission = false;
                         canDoMission = false;
                         timeAtStartHold = 0;
@@ -128,6 +142,7 @@ public class Player : MonoBehaviour
                 {
                     timeAtStartHold = 0;
                     mission.missionUI.transform.GetChild(3).GetComponent<Image>().fillAmount = 0;
+                    _animator.SetBool("Tasking", false);
                     hasStartMission = false;
                     canMove = true;
                 }
@@ -142,6 +157,7 @@ public class Player : MonoBehaviour
                     startMash++;
                     if (startMash >= maxTimesToMash)
                     {
+                        _animator.SetBool("Tasking", false);
                         hasStartMission = false;
                         canDoMission = false;
                         startMash = 0;
