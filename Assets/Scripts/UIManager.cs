@@ -11,7 +11,9 @@ public class UIManager : MonoBehaviour
 
     public TMP_Text timer;
     public TMP_Text timerVote;
+    public TMP_Text bestBossText;
     public GameObject voteCanvas;
+    public GameObject resultCanvas;
     public List<TMP_Text> scores;
     public List<Image> voted;
 
@@ -24,7 +26,6 @@ public class UIManager : MonoBehaviour
             Destroy(gameObject);
         }
         instance = this;
-        DontDestroyOnLoad(gameObject);
     }
 
 
@@ -38,7 +39,7 @@ public class UIManager : MonoBehaviour
     void Update()
     {
         scores[0].text = GameManager.instance.ScorePlayer(0).ToString();
-        //scores[1].text = GameManager.instance.ScorePlayer(1).ToString();
+        scores[1].text = GameManager.instance.ScorePlayer(1).ToString();
         //scores[2].text = GameManager.instance.ScorePlayer(2).ToString();
 
         if (!isVoting)
@@ -77,6 +78,13 @@ public class UIManager : MonoBehaviour
     public void VotePlayer(int idPlayer)
     {
         voted[idPlayer].gameObject.SetActive(true);
+    }
+
+    public void DisplayResults(int bestBoss, int score)
+    {
+        resultCanvas.SetActive(true);
+        bestBossText.text = string.Format("The best boss of this enterprise is the player {0} with a score of {1}", bestBoss + 1, score);
+        voteCanvas.SetActive(false);
     }
 
 }
