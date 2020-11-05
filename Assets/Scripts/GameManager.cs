@@ -211,6 +211,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void Vote(int voteValue)
+    {
+        playersScoreFinal[boss] += voteValue;
+    }
+
 }
 
 public enum GAME_STATE

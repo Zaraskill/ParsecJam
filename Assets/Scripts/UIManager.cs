@@ -66,8 +66,17 @@ public class UIManager : MonoBehaviour
     public void UndisplayVote()
     {
         isVoting = false;
+        foreach(Image voteToken in voted)
+        {
+            voteToken.gameObject.SetActive(false);
+        }
         voteCanvas.SetActive(false);
         timer.gameObject.SetActive(true);
+    }
+
+    public void VotePlayer(int idPlayer)
+    {
+        voted[idPlayer].gameObject.SetActive(true);
     }
 
 }

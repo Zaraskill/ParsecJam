@@ -495,7 +495,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &226743820
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -542,6 +542,7 @@ MonoBehaviour:
   startMash: 0
   isBoss: 0
   hasVoted: 0
+  canMove: 1
 --- !u!50 &226743822
 Rigidbody2D:
   serializedVersion: 4
@@ -1255,6 +1256,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 1
+  holdButtonUI: {fileID: 0}
+  mashButtonUI: {fileID: 0}
+  missionUI: {fileID: 0}
 --- !u!1 &808958510
 GameObject:
   m_ObjectHideFlags: 0
@@ -2777,6 +2781,7 @@ MonoBehaviour:
   startMash: 0
   isBoss: 0
   hasVoted: 0
+  canMove: 1
 --- !u!61 &1435355360
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3179,6 +3184,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 2
+  holdButtonUI: {fileID: 0}
+  mashButtonUI: {fileID: 0}
+  missionUI: {fileID: 0}
 --- !u!1 &1597629418
 GameObject:
   m_ObjectHideFlags: 0
@@ -4171,6 +4179,7 @@ MonoBehaviour:
   startMash: 0
   isBoss: 0
   hasVoted: 0
+  canMove: 1
 --- !u!50 &2120531111
 Rigidbody2D:
   serializedVersion: 4
@@ -4306,6 +4315,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4665393144131041177, guid: ef7e41fdf87511248980f7ca58c92b2c,
+        type: 3}
+      propertyPath: timeDay
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4752996443283279651, guid: ef7e41fdf87511248980f7ca58c92b2c,
         type: 3}

@@ -46,22 +46,26 @@ public class Player : MonoBehaviour
             if (mainPlayer.GetButtonDown("VotedA"))
             {
                 hasVoted = true;
-                //score
+                GameManager.instance.Vote(10);
+                UIManager.instance.VotePlayer(idPlayer);
             }
             else if (mainPlayer.GetButtonDown("VotedB"))
             {
                 hasVoted = true;
-                //score
+                GameManager.instance.Vote(5);
+                UIManager.instance.VotePlayer(idPlayer);
             }
             else if (mainPlayer.GetButtonDown("VotedX"))
             {
                 hasVoted = true;
-                //score
+                GameManager.instance.Vote(2);
+                UIManager.instance.VotePlayer(idPlayer);
             }
             else if (mainPlayer.GetButtonDown("VotedY"))
             {
                 hasVoted = true;
-                //score
+                GameManager.instance.Vote(1);
+                UIManager.instance.VotePlayer(idPlayer);
             }
         }
         if (canDoMission)
