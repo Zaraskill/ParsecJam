@@ -15,6 +15,9 @@ public class GameManager : MonoBehaviour
     private List<int> playersBoss;
     private int[] playersScoreFinal;
     private int[] playersScore;
+    public List<GameObject> missionsList;
+    public List<GameObject> spawnList;
+    private List<int> spawnUsed;
     private Player[] listPlayers;
     public int boss;
 
@@ -41,6 +44,9 @@ public class GameManager : MonoBehaviour
         numberDays = ReInput.controllers.joystickCount;
         day = 1;
         playersBoss = new List<int>();
+        spawnUsed = new List<int>();
+        missionsList = new List<GameObject>();
+        spawnList = new List<GameObject>();
         playersScoreFinal = new int[numberDays];
         playersScore = new int[numberDays];
         listPlayers = FindObjectsOfType<Player>();
@@ -128,6 +134,10 @@ public class GameManager : MonoBehaviour
         switch (newState)
         {
             case GAME_STATE.dayTime:
+                for(int index = 0; index < playersScore.Length; ++index)
+                {
+                    playersScore[index] = 0;
+                }
                 Unvote();
                 timeDayLeft = timeDay;                
                 int random;
@@ -160,6 +170,19 @@ public class GameManager : MonoBehaviour
 
                 break;
             case GAME_STATE.results:
+
+                int bestBoss = -1;
+                int bestScore = 0;
+                for(int index = 0; index < playersScoreFinal.Length; ++index)
+                {
+                    if(playersScoreFinal[index] > bestScore)
+                    {
+                        bestScore = playersScoreFinal[index];
+                        bestBoss = index;
+                    }
+                }
+                UIManager.instance.DisplayResults(bestBoss, bestScore);
+
                 stateGame = newState;
                 break;
         }
@@ -167,7 +190,13 @@ public class GameManager : MonoBehaviour
 
     private void SpawnMission()
     {
-
+        int random;
+        do
+        {
+            random = Random.Range(0, spawnList.Capacity);
+        } while (spawnUsed.Contains(random));
+        spawnUsed.Add(random);
+        Instantiate(missionsList[Random.Range(0, missionsList.Capacity)], spawnList[random].transform.position, Quaternion.identity);
     }
 
     public int ScorePlayer(int index)
