@@ -246,7 +246,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -106.899994, y: -89.3}
+  m_AnchoredPosition: {x: -106.8999, y: -89.30005}
   m_SizeDelta: {x: 213.80786, y: 178.58173}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6952567407693972665
@@ -468,7 +468,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -106.899994, y: -45}
+  m_AnchoredPosition: {x: -106.8999, y: -45}
   m_SizeDelta: {x: 213.80402, y: 54.004517}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6952567407752241569
@@ -631,7 +631,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Moyen il \xE9tait cool mais il peut mieux faire, il est sur la bonne voie"
+  m_text: "T\xEAtu comme un \xE2ne mais rapide comme une gazelle."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -658,7 +658,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 33.65
+  m_fontSize: 43.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -764,7 +764,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Est-ce que patato pc a \xE9t\xE9 un bon patron?"
+  m_text: "Si vous deviez r\xE9sumer votre Boss en une phrase..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -791,7 +791,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 65.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -905,7 +905,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -106.899994, y: -116.3}
+  m_AnchoredPosition: {x: -106.8999, y: -116.30005}
   m_SizeDelta: {x: 213.80402, y: 124.59082}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6952567407966262759
@@ -1038,7 +1038,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -322, y: -45.00006}
+  m_AnchoredPosition: {x: -322, y: -45.000122}
   m_SizeDelta: {x: 213.80402, y: 54.004517}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6952567408009349883
@@ -1934,7 +1934,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Oui c'est le best des best je l'aime trop je le veux comme boss IRL
+  m_text: "C\u2019est le Lion de notre savane !"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1961,7 +1961,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 34.45
+  m_fontSize: 44.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2067,7 +2067,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: LE PIRE DES CONNARDS
+  m_text: "Gu\xE8re plus efficace qu\u2019un chimpanz\xE9 manchot !"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2219,7 +2219,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -535, y: -45.00006}
+  m_AnchoredPosition: {x: -535, y: -45.000122}
   m_SizeDelta: {x: 213.80402, y: 54.004517}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6952567408835646414
@@ -2702,8 +2702,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Bof il est pas super cool il a \xE9t\xE9 souvent m\xE9chant et il ne nous
-    l\xE2che pas"
+  m_text: "De tous les volatiles c\u2019est un sacr\xE9 pingouin !"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2730,7 +2729,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 29.45
+  m_fontSize: 44.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
