@@ -13,11 +13,11 @@ public class GameManager : MonoBehaviour
     public int numberDays;
     public int day = 0;
     private List<int> playersBoss;
-    public int[] playersScoreFinal;
+    private int[] playersScoreFinal;
     private int[] playersScore;
     public List<GameObject> missionsList;
     public List<GameObject> spawnList;
-    private List<int> spawnUsed;
+    public List<int> spawnUsed;
     private Player[] listPlayers;
     public int boss;
 
@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
 
     private float timeDayLeft;
     private float timeVoteLeft;
-    public float timerSpawnMissionsLeft;
+    private float timerSpawnMissionsLeft;
     private int numberMissionsDone = 0;
 
     private void Awake()
@@ -108,12 +108,21 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void MissionDone(bool isSuccess, bool isBoss, int idPlayer)
+    public void MissionDone(bool isSuccess, bool isBoss, int idPlayer, GameObject mission)
     {
         if (isSuccess)
         {
             Debug.Log("Oh hé hein bon");
             numberMissionsDone++;
+
+            for(int index = 0; index < spawnList.Capacity; ++index)
+            {
+                if (spawnList[index].transform.position == mission.transform.position)
+                {
+                    spawnUsed.Remove(index);
+                }
+            }
+
             if (isBoss)
             {
                 playersScore[idPlayer]++;

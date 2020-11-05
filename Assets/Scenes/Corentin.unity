@@ -495,7 +495,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &226743820
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4240,6 +4240,11 @@ PrefabInstance:
         type: 3}
       propertyPath: timeVote
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4665393144131041177, guid: ef7e41fdf87511248980f7ca58c92b2c,
+        type: 3}
+      propertyPath: numberMissionsByDay
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4752996443283279651, guid: ef7e41fdf87511248980f7ca58c92b2c,
         type: 3}
