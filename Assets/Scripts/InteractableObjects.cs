@@ -15,7 +15,7 @@ public class InteractableObjects : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        canvas = FindObjectOfType<CanvasScaler>().gameObject;
     }
 
     // Update is called once per frame

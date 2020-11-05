@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     public int numberDays;
     public int day = 0;
     private List<int> playersBoss;
-    private int[] playersScoreFinal;
+    public int[] playersScoreFinal;
     private int[] playersScore;
     public List<GameObject> missionsList;
     public List<GameObject> spawnList;
@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
 
     private float timeDayLeft;
     private float timeVoteLeft;
-    private float timerSpawnMissionsLeft;
+    public float timerSpawnMissionsLeft;
     private int numberMissionsDone = 0;
 
     private void Awake()
@@ -45,8 +45,6 @@ public class GameManager : MonoBehaviour
         day = 1;
         playersBoss = new List<int>();
         spawnUsed = new List<int>();
-        missionsList = new List<GameObject>();
-        spawnList = new List<GameObject>();
         playersScoreFinal = new int[numberDays];
         playersScore = new int[numberDays];
         listPlayers = FindObjectsOfType<Player>();
@@ -63,6 +61,7 @@ public class GameManager : MonoBehaviour
         listPlayers[random].isBoss = true;
         playersBoss.Add(random);
         boss = random;
+        listPlayers[boss].GetComponent<SpriteRenderer>().color = Color.red;
     }
 
     // Update is called once per frame
@@ -89,6 +88,7 @@ public class GameManager : MonoBehaviour
                 timeVoteLeft -= Time.deltaTime;
                 if (timeVoteLeft <= 0 || CheckVote() )
                 {
+                    AddMissingVotes();
                     UIManager.instance.UndisplayVote();
 
                     if (day == numberDays)
@@ -124,6 +124,7 @@ public class GameManager : MonoBehaviour
             }
             if (numberMissionsDone == numberMissionsByDay)
             {
+                numberMissionsDone = 0;
                 SwitchStateGame(GAME_STATE.votingTime);
             }
         }
@@ -148,6 +149,7 @@ public class GameManager : MonoBehaviour
                 listPlayers[random].isBoss = true;
                 playersBoss.Add(random);
                 boss = random;
+                listPlayers[boss].GetComponent<SpriteRenderer>().color = Color.blue;
                 stateGame = newState;
                 break;
             case GAME_STATE.votingTime:
@@ -190,6 +192,10 @@ public class GameManager : MonoBehaviour
 
     private void SpawnMission()
     {
+        if (spawnUsed.Capacity == spawnList.Capacity)
+        {
+            return;
+        }
         int random;
         do
         {
@@ -229,6 +235,17 @@ public class GameManager : MonoBehaviour
             }
         }
         return true;
+    }
+
+    private void AddMissingVotes()
+    {
+        foreach (Player player in listPlayers)
+        {
+            if (!player.hasVoted)
+            {
+                playersScoreFinal[boss] += 5;
+            }
+        }
     }
 
     private void Unvote()

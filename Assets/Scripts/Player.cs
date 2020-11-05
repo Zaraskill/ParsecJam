@@ -117,7 +117,8 @@ public class Player : MonoBehaviour
                         timeAtStartHold = 0;
                         canMove = true;
                         GameManager.instance.MissionDone(true, isBoss, idPlayer);
-                        Destroy(mission.missionUI);
+                        Destroy(mission.gameObject);
+                        return;
                         //Completed
                     }
                 }
@@ -144,7 +145,8 @@ public class Player : MonoBehaviour
                         startMash = 0;
                         canMove = true;
                         GameManager.instance.MissionDone(true, isBoss, idPlayer);
-                        Destroy(mission.missionUI);
+                        Destroy(mission.gameObject);
+                        return;
                         //Completed
                     }
                 }
