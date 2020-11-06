@@ -53,6 +53,7 @@ public class Player : MonoBehaviour
                 hasVoted = true;
                 GameManager.instance.Vote(5);
                 UIManager.instance.VotePlayer(idPlayer);
+                AudioManager.instance.PlayVote();
             }
             if (mainPlayer.GetButtonDown("VotedA"))
             {
@@ -61,6 +62,7 @@ public class Player : MonoBehaviour
                     hasVoted = true;
                     GameManager.instance.Vote(10);
                     UIManager.instance.VotePlayer(idPlayer);
+                    AudioManager.instance.PlayVote();
                 }                
             }
             else if (mainPlayer.GetButtonDown("VotedB"))
@@ -70,6 +72,7 @@ public class Player : MonoBehaviour
                     hasVoted = true;
                     GameManager.instance.Vote(5);
                     UIManager.instance.VotePlayer(idPlayer);
+                    AudioManager.instance.PlayVote();
                 }                    
             }
             else if (mainPlayer.GetButtonDown("VotedY"))
@@ -79,6 +82,7 @@ public class Player : MonoBehaviour
                     hasVoted = true;
                     GameManager.instance.Vote(-5);
                     UIManager.instance.VotePlayer(idPlayer);
+                    AudioManager.instance.PlayVote();
                 }
             }
             else if (mainPlayer.GetButtonDown("VotedX"))
@@ -88,6 +92,7 @@ public class Player : MonoBehaviour
                     hasVoted = true;
                     GameManager.instance.Vote(-10);
                     UIManager.instance.VotePlayer(idPlayer);
+                    AudioManager.instance.PlayVote();
                 }
             }
         }

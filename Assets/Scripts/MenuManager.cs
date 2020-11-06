@@ -18,7 +18,6 @@ public class MenuManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -31,6 +30,7 @@ public class MenuManager : MonoBehaviour
     {
         mainMenu.SetActive(false);
         tutoMenu.SetActive(true);
+        AudioManager.instance.PlayButton();
     }
 
     public void OnClickCredits(bool activate)
@@ -47,16 +47,18 @@ public class MenuManager : MonoBehaviour
             creditsMenu.SetActive(false);
             EventSystem.current.SetSelectedGameObject(menuBut);
         }
-        
+        AudioManager.instance.PlayButton();
     }
 
     public void OnClickQuit()
     {
+        AudioManager.instance.PlayButton();
         Application.Quit();
     }
 
     public void OnClickStart()
     {
+        AudioManager.instance.PlayButton();
         SceneManager.LoadScene(1);
     }
 }

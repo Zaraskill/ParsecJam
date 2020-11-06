@@ -72,6 +72,7 @@ public class GameManager : MonoBehaviour
         boss = random;
         listPlayers[random].bossAttitude.SetActive(true);
         playerFree.Remove(random);
+        AudioManager.instance.PlayGame();
     }
 
     // Update is called once per frame
@@ -129,7 +130,7 @@ public class GameManager : MonoBehaviour
     {
         if (isSuccess)
         {
-            Debug.Log("Oh hé hein bon");
+            AudioManager.instance.PlayValid();
             numberMissionsDone++;
 
             RemoveMission(mission);
@@ -158,6 +159,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
+            AudioManager.instance.PlayFail();
             if (isBoss)
             {
                 playersScore[idPlayer] -= 2;
@@ -224,7 +226,7 @@ public class GameManager : MonoBehaviour
 
                 break;
             case GAME_STATE.results:
-
+                AudioManager.instance.PlayResults();
                 int bestBoss = -1;
                 int bestScore = 0;
                 for(int index = 0; index < playersScoreFinal.Length; ++index)

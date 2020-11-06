@@ -41,6 +41,7 @@ public class InteractableObjects : MonoBehaviour
             if (isFailed)
             {
                 GameManager.instance.RemoveMission(gameObject);
+                AudioManager.instance.PlayMiss();
                 Destroy(gameObject);
             }
             else
