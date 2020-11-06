@@ -147,7 +147,14 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-
+            if (isBoss)
+            {
+                playersScore[idPlayer] -= 2;
+            }
+            else
+            {
+                playersScore[idPlayer]--;
+            }
         }
     }
 

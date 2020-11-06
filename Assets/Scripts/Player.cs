@@ -146,6 +146,7 @@ public class Player : MonoBehaviour
                 }
                 else if (mainPlayer.GetButtonUp("Submit"))
                 {
+                    GameManager.instance.MissionDone(false, isBoss, idPlayer, mission.gameObject);
                     timeAtStartHold = 0;
                     mission.missionUI.transform.GetChild(3).GetComponent<Image>().fillAmount = 0;
                     _animator.SetBool("Tasking", false);
@@ -182,6 +183,7 @@ public class Player : MonoBehaviour
                 }
                 else if (startMash <= 0)
                 {
+                    GameManager.instance.MissionDone(false, isBoss, idPlayer, mission.gameObject);
                     startMash = 0;
                     _animator.SetBool("Tasking", false);
                     mission.PlayerFailed();
