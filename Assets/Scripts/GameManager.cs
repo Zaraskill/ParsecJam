@@ -67,6 +67,7 @@ public class GameManager : MonoBehaviour
         listPlayers[random].isBoss = true;
         playersBoss.Add(random);
         boss = random;
+        listPlayers[random].bossAttitude.SetActive(true);
         playerFree.Remove(random);
     }
 
@@ -181,6 +182,10 @@ public class GameManager : MonoBehaviour
                 listPlayers[random].isBoss = true;
                 playersBoss.Add(random);
                 boss = random;
+                foreach(Player player in listPlayers)
+                {
+                    player.BossAttitude();
+                }
                 stateGame = newState;
                 break;
             case GAME_STATE.votingTime:
@@ -306,3 +311,18 @@ public enum GAME_STATE
     votingTime,
     results
 }
+
+
+
+
+
+
+
+
+
+/*
+ *je COMMENTE QUAND JE LE VEUX SALE CHIEN
+ * DE
+ * SES
+ * MORTS
+ */
