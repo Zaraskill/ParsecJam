@@ -102,7 +102,7 @@ public class Player : MonoBehaviour
         }
         if (canMove)
         {
-            moveSpeed = 5f;
+            moveSpeed = 3f;
             movement.x = mainPlayer.GetAxis("HorizontalMove");
             movement.y = mainPlayer.GetAxis("VerticalMove");
             _animator.SetFloat("Speed", Mathf.Abs(movement.x));

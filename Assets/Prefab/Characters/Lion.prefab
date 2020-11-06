@@ -1740,7 +1740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idPlayer: 0
-  moveSpeed: 5
+  moveSpeed: 3
   maxTimeHold: 3
   timeAtStartHold: 0
   maxTimesToMash: 10
