@@ -13,6 +13,7 @@ public class InteractableObjects : MonoBehaviour
     private float timerMissionLeft;
     public Player player;
     public SpriteRenderer needBoss;
+    private List<int> playersNear;
 
     public GameObject holdButtonUI;
     public GameObject mashButtonUI;
@@ -26,6 +27,7 @@ public class InteractableObjects : MonoBehaviour
         //canvas = FindObjectOfType<CanvasScaler>().gameObject;
         id = Random.Range(1, 3);
         timerMissionLeft = timerMission;
+        playersNear = new List<int>();
     }
 
     // Update is called once per frame
@@ -66,6 +68,11 @@ public class InteractableObjects : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
+            playersNear.Add(collision.GetComponent<Player>().GetId());
+            if (hasStarted || missionUI != null)
+            {
+                return;
+            }
             if(id == 1)
             {
                 missionUI = Instantiate(holdButtonUI, transform.position, Quaternion.identity, collision.GetComponent<Player>().canvas.transform);
@@ -81,7 +88,11 @@ public class InteractableObjects : MonoBehaviour
     {
         if(collision.CompareTag("Player") && missionUI != null)
         {
-            Destroy(missionUI);
+            playersNear.Remove(collision.GetComponent<Player>().GetId());
+            if(playersNear.Count == 0)
+            {
+                Destroy(missionUI);
+            }            
         }
     }
 }

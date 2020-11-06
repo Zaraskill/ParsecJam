@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     public List<GameObject> spawnList;
     public List<int> spawnUsed;
     private Player[] listPlayers;
+    private List<int> playerFree;
     public int boss;
 
     public float timeDay = 120f;
@@ -48,6 +49,11 @@ public class GameManager : MonoBehaviour
         playersScoreFinal = new int[numberDays];
         playersScore = new int[numberDays];
         listPlayers = FindObjectsOfType<Player>();
+        playerFree = new List<int>();
+        for (int index = 0; index < numberDays; index++)
+        {
+            playerFree.Add(index);
+        }
     }
 
     // Start is called before the first frame update
@@ -61,7 +67,7 @@ public class GameManager : MonoBehaviour
         listPlayers[random].isBoss = true;
         playersBoss.Add(random);
         boss = random;
-        listPlayers[boss].GetComponent<SpriteRenderer>().color = Color.red;
+        playerFree.Remove(random);
     }
 
     // Update is called once per frame
@@ -80,7 +86,7 @@ public class GameManager : MonoBehaviour
                 timeDayLeft -= Time.deltaTime;
                 if (timeDayLeft <= 0)
                 {
-                    //bloque tout ce qui était en train d'être fait
+                    
                     SwitchStateGame(GAME_STATE.votingTime);
                 }
                 break;
@@ -169,18 +175,20 @@ public class GameManager : MonoBehaviour
                 }
                 Unvote();
                 timeDayLeft = timeDay;                
-                int random;
-                do
-                {
-                    random = Random.Range(0, numberDays);
-                } while (playersBoss.Contains(random));
+                int random = 1;
+                random = playerFree[Random.Range(0, playerFree.Count)];
+                playerFree.Remove(random);
                 listPlayers[random].isBoss = true;
                 playersBoss.Add(random);
                 boss = random;
-                listPlayers[boss].GetComponent<SpriteRenderer>().color = Color.blue;
                 stateGame = newState;
                 break;
             case GAME_STATE.votingTime:
+                InteractableObjects[] missions = FindObjectsOfType<InteractableObjects>();
+                foreach (InteractableObjects mission in missions)
+                {
+                    Destroy(mission);
+                }
                 int score = 0;
                 foreach(int value in playersScore)
                 {
@@ -220,17 +228,17 @@ public class GameManager : MonoBehaviour
 
     private void SpawnMission()
     {
-        if (spawnUsed.Capacity == spawnList.Capacity)
+        if (spawnUsed.Capacity == spawnList.Count)
         {
             return;
         }
         int random;
         do
         {
-            random = Random.Range(0, spawnList.Capacity);
+            random = Random.Range(0, spawnList.Count);
         } while (spawnUsed.Contains(random));
         spawnUsed.Add(random);
-        Instantiate(missionsList[Random.Range(0, missionsList.Capacity)], spawnList[random].transform.position, Quaternion.identity);
+        Instantiate(missionsList[Random.Range(0, missionsList.Count)], spawnList[random].transform.position, Quaternion.identity);
     }
 
     public int ScorePlayer(int index)

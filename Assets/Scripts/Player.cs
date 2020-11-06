@@ -137,6 +137,7 @@ public class Player : MonoBehaviour
                 _animator.SetBool("Tasking", true);
                 hasStartMission = true;
                 canMove = false;
+                _rigidbody.bodyType = RigidbodyType2D.Kinematic;
             }
         }
         else
@@ -156,6 +157,7 @@ public class Player : MonoBehaviour
                         canDoMission = false;
                         timeAtStartHold = 0;
                         canMove = true;
+                        _rigidbody.bodyType = RigidbodyType2D.Dynamic;
                         GameManager.instance.MissionDone(true, isBoss, idPlayer,mission.gameObject);
                         Destroy(mission.gameObject);
                         return;
@@ -172,6 +174,7 @@ public class Player : MonoBehaviour
                     mission = null;
                     hasStartMission = false;
                     canMove = true;
+                    _rigidbody.bodyType = RigidbodyType2D.Dynamic;
                 }
             }
 
@@ -189,6 +192,7 @@ public class Player : MonoBehaviour
                         canDoMission = false;
                         startMash = 0;
                         canMove = true;
+                        _rigidbody.bodyType = RigidbodyType2D.Dynamic;
                         GameManager.instance.MissionDone(true, isBoss, idPlayer, mission.gameObject);
                         Destroy(mission.gameObject);
                         return;
@@ -199,7 +203,7 @@ public class Player : MonoBehaviour
                 {
                     startMash -= Time.deltaTime * 0.5f;
                 }
-                else if (startMash <= 0)
+                else if (startMash < 0)
                 {
                     GameManager.instance.MissionDone(false, isBoss, idPlayer, mission.gameObject);
                     startMash = 0;
@@ -208,6 +212,7 @@ public class Player : MonoBehaviour
                     mission = null;
                     hasStartMission = false;
                     canMove = true;
+                    _rigidbody.bodyType = RigidbodyType2D.Dynamic;
                 }
                 mission.missionUI.transform.GetChild(3).GetComponent<Image>().fillAmount = startMash / maxTimesToMash;
             }
@@ -234,5 +239,10 @@ public class Player : MonoBehaviour
             canDoMission = false;
             mission = null;
         }
+    }
+
+    public int GetId()
+    {
+        return idPlayer;
     }
 }

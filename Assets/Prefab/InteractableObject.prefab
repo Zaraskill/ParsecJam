@@ -235,7 +235,7 @@ MonoBehaviour:
   id: 2
   isFailed: 0
   hasStarted: 0
-  timerMission: 3
+  timerMission: 10
   player: {fileID: 0}
   needBoss: {fileID: 4087694699756430170}
   holdButtonUI: {fileID: 4593823817723765535, guid: 09d42d84ee586ea458ae5786efa27ba5,
