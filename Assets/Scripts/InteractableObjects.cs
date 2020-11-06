@@ -50,6 +50,10 @@ public class InteractableObjects : MonoBehaviour
 
     public void PlayerFailed()
     {
+        if (player.isBoss)
+        {
+            Destroy(gameObject);
+        }
         isFailed = true;
         timerMissionLeft = timerMission;
         hasStarted = false;
