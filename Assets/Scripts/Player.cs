@@ -47,29 +47,47 @@ public class Player : MonoBehaviour
     {
         if (GameManager.instance.HasToVote() && !hasVoted)
         {
-            if (mainPlayer.GetButtonDown("VotedA"))
-            {
-                hasVoted = true;
-                GameManager.instance.Vote(10);
-                UIManager.instance.VotePlayer(idPlayer);
-            }
-            else if (mainPlayer.GetButtonDown("VotedB"))
+            if (GameManager.instance.ScorePlayer(idPlayer) < 4)
             {
                 hasVoted = true;
                 GameManager.instance.Vote(5);
                 UIManager.instance.VotePlayer(idPlayer);
             }
-            else if (mainPlayer.GetButtonDown("VotedX"))
+            if (mainPlayer.GetButtonDown("VotedA"))
             {
-                hasVoted = true;
-                GameManager.instance.Vote(-5);
-                UIManager.instance.VotePlayer(idPlayer);
+                if(GameManager.instance.ScorePlayer(idPlayer) >= 4)
+                {
+                    hasVoted = true;
+                    GameManager.instance.Vote(10);
+                    UIManager.instance.VotePlayer(idPlayer);
+                }                
+            }
+            else if (mainPlayer.GetButtonDown("VotedB"))
+            {
+                if (GameManager.instance.ScorePlayer(idPlayer) >= 5)
+                {
+                    hasVoted = true;
+                    GameManager.instance.Vote(5);
+                    UIManager.instance.VotePlayer(idPlayer);
+                }                    
             }
             else if (mainPlayer.GetButtonDown("VotedY"))
             {
-                hasVoted = true;
-                GameManager.instance.Vote(-10);
-                UIManager.instance.VotePlayer(idPlayer);
+                if (GameManager.instance.ScorePlayer(idPlayer) >= 10)
+                {
+                    hasVoted = true;
+                    GameManager.instance.Vote(-5);
+                    UIManager.instance.VotePlayer(idPlayer);
+                }
+            }
+            else if (mainPlayer.GetButtonDown("VotedX"))
+            {
+                if (GameManager.instance.ScorePlayer(idPlayer) >= 15)
+                {
+                    hasVoted = true;
+                    GameManager.instance.Vote(-10);
+                    UIManager.instance.VotePlayer(idPlayer);
+                }
             }
         }
         if (canDoMission)

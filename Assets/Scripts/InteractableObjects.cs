@@ -12,6 +12,7 @@ public class InteractableObjects : MonoBehaviour
     public float timerMission = 3f;
     private float timerMissionLeft;
     public Player player;
+    public SpriteRenderer needBoss;
 
     public GameObject holdButtonUI;
     public GameObject mashButtonUI;
@@ -41,19 +42,19 @@ public class InteractableObjects : MonoBehaviour
             }
             else
             {
-                
-                isFailed = true;
-                timerMissionLeft = timerMission;
+
+                PlayerFailed();
             }
         }
     }
 
     public void PlayerFailed()
     {
-        if (player.isBoss)
+        if (player != null && player.isBoss)
         {
             Destroy(gameObject);
         }
+        needBoss.gameObject.SetActive(true);
         isFailed = true;
         timerMissionLeft = timerMission;
         hasStarted = false;
