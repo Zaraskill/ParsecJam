@@ -40,7 +40,7 @@ public class UIManager : MonoBehaviour
     {
         scores[0].text = GameManager.instance.ScorePlayer(0).ToString();
         scores[1].text = GameManager.instance.ScorePlayer(1).ToString();
-        scores[2].text = GameManager.instance.ScorePlayer(2).ToString();
+        //scores[2].text = GameManager.instance.ScorePlayer(2).ToString();
 
         if (!isVoting)
         {
