@@ -24,13 +24,12 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
         }
         instance = this;
-        DontDestroyOnLoad(gameObject);
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        PlayMenu();
+        
     }
 
     // Update is called once per frame

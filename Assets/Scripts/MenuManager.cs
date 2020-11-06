@@ -20,6 +20,7 @@ public class MenuManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        AudioManager.instance.PlayMenu();
     }
 
     // Update is called once per frame

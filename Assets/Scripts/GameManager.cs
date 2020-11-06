@@ -227,16 +227,7 @@ public class GameManager : MonoBehaviour
                 break;
             case GAME_STATE.results:
                 AudioManager.instance.PlayResults();
-                int bestBoss = -1;
-                int bestScore = 0;
-                for(int index = 0; index < playersScoreFinal.Length; ++index)
-                {
-                    if(playersScoreFinal[index] > bestScore)
-                    {
-                        bestScore = playersScoreFinal[index];
-                        bestBoss = index;
-                    }
-                }
+
                 List<int> leaderboard = GetRankPlayer();
                 for(int index = 0; index < leaderboard.Count; ++index)
                 {
