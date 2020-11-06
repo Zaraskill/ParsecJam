@@ -109,6 +109,12 @@ public class Player : MonoBehaviour
         {
             if (mainPlayer.GetButtonDown("Submit"))
             {
+                if (mission.hasStarted)
+                {
+                    return;
+                }
+                mission.hasStarted = true;
+                mission.player = this;
                 Debug.Log("Coucou");
                 _animator.SetBool("Tasking", true);
                 hasStartMission = true;
@@ -185,6 +191,10 @@ public class Player : MonoBehaviour
     {
         if (collision.CompareTag("Interactable"))
         {
+            if(collision.GetComponent<InteractableObjects>().isFailed && !isBoss)
+            {
+                return;
+            }
             canDoMission = true;
             mission = collision.GetComponent<InteractableObjects>();
         }

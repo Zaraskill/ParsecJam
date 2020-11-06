@@ -125,7 +125,15 @@ public class GameManager : MonoBehaviour
 
             if (isBoss)
             {
-                playersScore[idPlayer]++;
+                if (mission.GetComponent<InteractableObjects>().isFailed)
+                {
+                    playersScore[idPlayer] += 2;
+                }
+                else
+                {
+                    playersScore[idPlayer]++;
+                }
+                
             }
             else
             {
@@ -136,6 +144,10 @@ public class GameManager : MonoBehaviour
                 numberMissionsDone = 0;
                 SwitchStateGame(GAME_STATE.votingTime);
             }
+        }
+        else
+        {
+
         }
     }
 

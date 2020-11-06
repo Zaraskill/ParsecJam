@@ -543,6 +543,7 @@ MonoBehaviour:
   isBoss: 0
   hasVoted: 0
   canMove: 1
+  canvas: {fileID: 0}
 --- !u!50 &226743822
 Rigidbody2D:
   serializedVersion: 4
@@ -2562,6 +2563,7 @@ MonoBehaviour:
   isBoss: 0
   hasVoted: 0
   canMove: 1
+  canvas: {fileID: 0}
 --- !u!61 &1435355360
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3998,6 +4000,7 @@ MonoBehaviour:
   isBoss: 0
   hasVoted: 0
   canMove: 1
+  canvas: {fileID: 0}
 --- !u!50 &2120531111
 Rigidbody2D:
   serializedVersion: 4
@@ -4152,7 +4155,7 @@ PrefabInstance:
     - target: {fileID: 4665393144131041177, guid: ef7e41fdf87511248980f7ca58c92b2c,
         type: 3}
       propertyPath: timerSpawnMissions
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4665393144131041177, guid: ef7e41fdf87511248980f7ca58c92b2c,
         type: 3}
@@ -4244,7 +4247,7 @@ PrefabInstance:
     - target: {fileID: 4665393144131041177, guid: ef7e41fdf87511248980f7ca58c92b2c,
         type: 3}
       propertyPath: numberMissionsByDay
-      value: 2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4752996443283279651, guid: ef7e41fdf87511248980f7ca58c92b2c,
         type: 3}

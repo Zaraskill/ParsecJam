@@ -6,6 +6,13 @@ using UnityEngine.UI;
 public class InteractableObjects : MonoBehaviour
 {
     public int id;
+
+    public bool isFailed = false;
+    public bool hasStarted = false;
+    public float timerMission = 3f;
+    private float timerMissionLeft;
+    public Player player;
+
     public GameObject holdButtonUI;
     public GameObject mashButtonUI;
 
@@ -17,12 +24,28 @@ public class InteractableObjects : MonoBehaviour
     {
         //canvas = FindObjectOfType<CanvasScaler>().gameObject;
         id = Random.Range(1, 3);
+        timerMissionLeft = timerMission;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        timerMissionLeft -= Time.deltaTime;
+        if(timerMissionLeft <= 0)
+        {
+            hasStarted = false;
+            player = null;
+            if (isFailed)
+            {
+                Destroy(gameObject);
+            }
+            else
+            {
+                
+                isFailed = true;
+                timerMissionLeft = timerMission;
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
