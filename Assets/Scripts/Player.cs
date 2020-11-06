@@ -25,6 +25,7 @@ public class Player : MonoBehaviour
     public float startMash = 0;
 
     public bool isBoss;
+    public GameObject bossAttitude;
     public bool hasVoted;
     private bool canDoMission;
     private bool hasStartMission;
@@ -244,5 +245,17 @@ public class Player : MonoBehaviour
     public int GetId()
     {
         return idPlayer;
+    }
+
+    public void BossAttitude()
+    {
+        if (isBoss)
+        {
+            bossAttitude.SetActive(true);
+        }
+        else
+        {
+            bossAttitude.SetActive(false);
+        }
     }
 }
