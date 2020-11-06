@@ -2611,6 +2611,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4522203325401825961, guid: 48250a6749eaa874094424b2b42b7478,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1491895171}
     - target: {fileID: 4981338926522086785, guid: 48250a6749eaa874094424b2b42b7478,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -26,10 +26,12 @@ public class GameManager : MonoBehaviour
     public float timeVote = 120f;
     public float timerSpawnMissions = 15f;
     public int numberMissionsByDay = 10;
+    public float timeBeforeVote;
 
     private float timeDayLeft;
     private float timeVoteLeft;
     private float timerSpawnMissionsLeft;
+    public float timeBeforeVoteLeft;
     private int numberMissionsDone = 0;
 
     private void Awake()
@@ -62,6 +64,7 @@ public class GameManager : MonoBehaviour
         timerSpawnMissionsLeft = timerSpawnMissions;
         timeDayLeft = timeDay;
         timeVoteLeft = timeVote;
+        timeBeforeVoteLeft = timeBeforeVote;
 
         int random = Random.Range(0, numberDays);
         listPlayers[random].isBoss = true;
@@ -92,22 +95,29 @@ public class GameManager : MonoBehaviour
                 }
                 break;
             case GAME_STATE.votingTime:
-                timeVoteLeft -= Time.deltaTime;
-                if (timeVoteLeft <= 0 || CheckVote() )
+                if(timeBeforeVoteLeft > 0)
                 {
-                    AddMissingVotes();
-                    UIManager.instance.UndisplayVote();
-
-                    if (day == numberDays)
-                    {
-                        SwitchStateGame(GAME_STATE.results);
-                    }
-                    else
-                    {
-                        SwitchStateGame(GAME_STATE.dayTime);
-                        day++;
-                    }
+                    timeBeforeVoteLeft -= Time.deltaTime;
                 }
+                else
+                {
+                    timeVoteLeft -= Time.deltaTime;
+                    if (timeVoteLeft <= 0 || CheckVote())
+                    {
+                        AddMissingVotes();
+                        UIManager.instance.UndisplayVote();
+
+                        if (day == numberDays)
+                        {
+                            SwitchStateGame(GAME_STATE.results);
+                        }
+                        else
+                        {
+                            SwitchStateGame(GAME_STATE.dayTime);
+                            day++;
+                        }
+                    }
+                }                
                 break;
             case GAME_STATE.results:
                 //Afficher meilleur boss
@@ -122,13 +132,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("Oh hé hein bon");
             numberMissionsDone++;
 
-            for(int index = 0; index < spawnList.Capacity; ++index)
-            {
-                if (spawnList[index].transform.position == mission.transform.position)
-                {
-                    spawnUsed.Remove(index);
-                }
-            }
+            RemoveMission(mission);
 
             if (isBoss)
             {
@@ -175,7 +179,8 @@ public class GameManager : MonoBehaviour
                     playersScore[index] = 0;
                 }
                 Unvote();
-                timeDayLeft = timeDay;                
+                timeDayLeft = timeDay;
+                timeBeforeVoteLeft = timeBeforeVote;
                 int random = 1;
                 random = playerFree[Random.Range(0, playerFree.Count)];
                 playerFree.Remove(random);
@@ -192,7 +197,13 @@ public class GameManager : MonoBehaviour
                 InteractableObjects[] missions = FindObjectsOfType<InteractableObjects>();
                 foreach (InteractableObjects mission in missions)
                 {
-                    Destroy(mission);
+                    RemoveMission(mission.gameObject);
+                    Destroy(mission.missionUI);
+                    Destroy(mission.gameObject);
+                }
+                foreach(Player player in listPlayers)
+                {
+                    player.DynamicPlayer();
                 }
                 int score = 0;
                 foreach(int value in playersScore)
@@ -244,6 +255,17 @@ public class GameManager : MonoBehaviour
         } while (spawnUsed.Contains(random));
         spawnUsed.Add(random);
         Instantiate(missionsList[Random.Range(0, missionsList.Count)], spawnList[random].transform.position, Quaternion.identity);
+    }
+
+    public void RemoveMission(GameObject mission)
+    {
+        for (int index = 0; index < spawnList.Capacity; ++index)
+        {
+            if (spawnList[index].transform.position == mission.transform.position)
+            {
+                spawnUsed.Remove(index);
+            }
+        }
     }
 
     public int ScorePlayer(int index)

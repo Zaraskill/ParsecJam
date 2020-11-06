@@ -46,7 +46,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.instance.HasToVote() && !hasVoted)
+        if (GameManager.instance.HasToVote() && !hasVoted && GameManager.instance.timeBeforeVoteLeft < 0)
         {
             if (GameManager.instance.ScorePlayer(idPlayer) < 4)
             {
@@ -160,6 +160,7 @@ public class Player : MonoBehaviour
                         canMove = true;
                         _rigidbody.bodyType = RigidbodyType2D.Dynamic;
                         GameManager.instance.MissionDone(true, isBoss, idPlayer,mission.gameObject);
+                        Destroy(mission.missionUI);
                         Destroy(mission.gameObject);
                         return;
                         //Completed
@@ -195,14 +196,15 @@ public class Player : MonoBehaviour
                         canMove = true;
                         _rigidbody.bodyType = RigidbodyType2D.Dynamic;
                         GameManager.instance.MissionDone(true, isBoss, idPlayer, mission.gameObject);
-                        Destroy(mission.gameObject);
+                        Destroy(mission.missionUI);
+                        Destroy(mission.gameObject);                        
                         return;
                         //Completed
                     }
                 }
                 else if (startMash > 0)
                 {
-                    startMash -= Time.deltaTime * 0.5f;
+                    startMash -= Time.deltaTime * 0.8f;
                 }
                 else if (startMash < 0)
                 {
@@ -257,5 +259,11 @@ public class Player : MonoBehaviour
         {
             bossAttitude.SetActive(false);
         }
+    }
+
+    public void DynamicPlayer()
+    {
+        _rigidbody.bodyType = RigidbodyType2D.Dynamic;
+        _animator.SetBool("Tasking", false);
     }
 }

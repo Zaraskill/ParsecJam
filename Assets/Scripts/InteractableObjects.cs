@@ -34,12 +34,13 @@ public class InteractableObjects : MonoBehaviour
     void Update()
     {
         timerMissionLeft -= Time.deltaTime;
-        if(timerMissionLeft <= 0)
+        if(timerMissionLeft <= 0 && !hasStarted)
         {
             hasStarted = false;
             player = null;
             if (isFailed)
             {
+                GameManager.instance.RemoveMission(gameObject);
                 Destroy(gameObject);
             }
             else
@@ -68,6 +69,10 @@ public class InteractableObjects : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
+            if (isFailed && !collision.GetComponent<Player>().isBoss)
+            {
+                return;
+            }
             playersNear.Add(collision.GetComponent<Player>().GetId());
             if (hasStarted || missionUI != null)
             {

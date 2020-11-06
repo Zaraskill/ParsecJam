@@ -54,4 +54,6 @@ MonoBehaviour:
   timeDay: 120
   timeVote: 120
   timerSpawnMissions: 4
-  numberMissionsByDay: 10
+  numberMissionsByDay: 400
+  timeBeforeVote: 2
+  timeBeforeVoteLeft: 0
