@@ -649,7 +649,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 7
+  m_SortingOrder: 8
   m_Sprite: {fileID: 21300000, guid: 25979e26c8f93ee4b88556bd81094469, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1300,6 +1300,26 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6952567408009349881, guid: 15fb544e5dc7bce44865bba96b8fa54d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -45.000244
+      objectReference: {fileID: 0}
+    - target: {fileID: 6952567408835646412, guid: 15fb544e5dc7bce44865bba96b8fa54d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -45.000244
+      objectReference: {fileID: 0}
+    - target: {fileID: 6952567409139415437, guid: 15fb544e5dc7bce44865bba96b8fa54d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -84.44995
+      objectReference: {fileID: 0}
+    - target: {fileID: 6952567409397737557, guid: 15fb544e5dc7bce44865bba96b8fa54d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 61.07788
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15fb544e5dc7bce44865bba96b8fa54d, type: 3}
 --- !u!114 &369269127 stripped
@@ -1599,7 +1619,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 7
+  m_SortingOrder: 8
   m_Sprite: {fileID: 21300000, guid: 25979e26c8f93ee4b88556bd81094469, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4375,7 +4395,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 7
+  m_SortingOrder: 8
   m_Sprite: {fileID: 21300000, guid: 25979e26c8f93ee4b88556bd81094469, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7559,6 +7579,7 @@ MonoBehaviour:
   maxTimesToMash: 0
   startMash: 0
   isBoss: 0
+  bossAttitude: {fileID: 0}
   hasVoted: 0
   canMove: 1
   canvas: {fileID: 0}
