@@ -11,7 +11,9 @@ public class MenuManager : MonoBehaviour
     public GameObject tutoMenu;
     public GameObject creditsBut;
     public GameObject menuBut;
+    public GameObject toto;
 
+    private int sceneIndex;
 
 
 
@@ -30,6 +32,7 @@ public class MenuManager : MonoBehaviour
     {
         mainMenu.SetActive(false);
         tutoMenu.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(toto);
         AudioManager.instance.PlayButton();
     }
 
@@ -59,6 +62,7 @@ public class MenuManager : MonoBehaviour
     public void OnClickStart()
     {
         AudioManager.instance.PlayButton();
+        //sceneIndex = Random.Range(0, SceneManager.sceneCount);
         SceneManager.LoadScene(1);
     }
 }
