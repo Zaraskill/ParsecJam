@@ -249,12 +249,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idPlayer: 3
-  moveSpeed: 5
+  moveSpeed: 3
   maxTimeHold: 3
   timeAtStartHold: 0
   maxTimesToMash: 10
   startMash: 0
   isBoss: 0
+  bossAttitude: {fileID: 0}
   hasVoted: 0
   canMove: 1
   canvas: {fileID: 0}
