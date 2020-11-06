@@ -48,6 +48,15 @@ public class InteractableObjects : MonoBehaviour
         }
     }
 
+    public void PlayerFailed()
+    {
+        isFailed = true;
+        timerMissionLeft = timerMission;
+        hasStarted = false;
+        player = null;
+        Destroy(missionUI);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.CompareTag("Player"))

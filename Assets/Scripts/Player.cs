@@ -149,6 +149,8 @@ public class Player : MonoBehaviour
                     timeAtStartHold = 0;
                     mission.missionUI.transform.GetChild(3).GetComponent<Image>().fillAmount = 0;
                     _animator.SetBool("Tasking", false);
+                    mission.PlayerFailed();
+                    mission = null;
                     hasStartMission = false;
                     canMove = true;
                 }
@@ -181,6 +183,11 @@ public class Player : MonoBehaviour
                 else if (startMash <= 0)
                 {
                     startMash = 0;
+                    _animator.SetBool("Tasking", false);
+                    mission.PlayerFailed();
+                    mission = null;
+                    hasStartMission = false;
+                    canMove = true;
                 }
                 mission.missionUI.transform.GetChild(3).GetComponent<Image>().fillAmount = startMash / maxTimesToMash;
             }
