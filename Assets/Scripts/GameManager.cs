@@ -237,11 +237,45 @@ public class GameManager : MonoBehaviour
                         bestBoss = index;
                     }
                 }
-                UIManager.instance.DisplayResults(bestBoss, bestScore);
+                List<int> leaderboard = GetRankPlayer();
+                for(int index = 0; index < leaderboard.Count; ++index)
+                {
+                    UIManager.instance.ResultsPosition(leaderboard[index] + 1, playersScoreFinal[leaderboard[index]], index + 1);
+                }
+                UIManager.instance.DisplayResults();
 
                 stateGame = newState;
                 break;
         }
+    }
+
+    private List<int> GetRankPlayer()
+    {
+        List<int> leaderboard = new List<int>();
+        leaderboard.Add(0);
+        if(numberDays > 1)
+        {
+            if (playersScoreFinal[1] > playersScoreFinal[0])
+            {
+                leaderboard.Insert(0, 1);
+            }
+            if(numberDays > 2)
+            {
+                if (playersScoreFinal[2] > playersScoreFinal[leaderboard[0]])
+                {
+                    leaderboard.Insert(0, 2);
+                }
+                else if (playersScoreFinal[2] > playersScoreFinal[leaderboard[1]])
+                {
+                    leaderboard.Insert(1, 2);
+                }
+                else
+                {
+                    leaderboard.Insert(2, 2);
+                }
+            }
+        }        
+        return leaderboard;
     }
 
     private void SpawnMission()
