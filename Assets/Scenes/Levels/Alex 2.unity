@@ -384,18 +384,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 48045791}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &48045796 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6952567408575402420, guid: 15fb544e5dc7bce44865bba96b8fa54d,
-    type: 3}
-  m_PrefabInstance: {fileID: 48045791}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &48045797 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6952567408013883873, guid: 15fb544e5dc7bce44865bba96b8fa54d,
@@ -6717,7 +6705,7 @@ PrefabInstance:
         type: 3}
       propertyPath: bestBossText
       value: 
-      objectReference: {fileID: 48045796}
+      objectReference: {fileID: 0}
     - target: {fileID: 7977018161916736892, guid: 71d6837911824dd4282d0a1aa1f167d5,
         type: 3}
       propertyPath: voteCanvas
